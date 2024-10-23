@@ -13,6 +13,7 @@ import Logo from '@/assets/logo/svg/logo.svg';
 export default function Navbar() {
   const [toggle, setToggle] = useState(false);
   const [hoveredLink, setHoveredLink] = useState<string | null>(null);
+  const [activeSubmenu, setActiveSubmenu] = useState<string | null>(null);
   const matches = useMediaQuery('(min-width: 1025px)');
   const pathname = usePathname();
   const [isClient, setIsClient] = useState(false);
@@ -20,12 +21,19 @@ export default function Navbar() {
 
   useEffect(() => {
     setIsClient(true);
+    // Prevent body scroll when mobile menu is open
+    if (toggle) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'unset';
+    }
     return () => {
       if (timeoutRef.current) {
         clearTimeout(timeoutRef.current);
       }
+      document.body.style.overflow = 'unset';
     };
-  }, []);
+  }, [toggle]);
 
   const handleLinkClick = () => {
     if (!matches) {
@@ -47,23 +55,27 @@ export default function Navbar() {
     }, 100);
   };
 
+  const toggleSubmenu = (name: string) => {
+    setActiveSubmenu(activeSubmenu === name ? null : name);
+  };
+
   if (!isClient) {
     return null;
   }
 
   return (
-    <nav className="bg-white opacity-80 flex sticky top-0 z-[90]">
-      <div className="w-full max-w-[99rem] py-4 lg:py-8 mx-auto lg:mx-7 2xl:mx-auto px-5 md:px-2 flex justify-between items-center">
+    <nav className="bg-transparent backdrop-blur-lg fixed w-full top-0 z-[90] border border-b-gray-300">
+      <div className="w-full max-w-[99rem] py-4 lg:py-8 mx-auto lg:mx-7 2xl:mx-auto px-5 md:px-5 flex justify-between items-center">
         {/* Logo */}
         <Link href="/" className="flex flex-col gap-x-4 items-center justify-center gap-y-3">
-          <Image src={Logo} alt="logo" className="w-[90px] h-[90px]" />
-          <div className="flex flex-col items-center justify-center text-center">
-            <h1 className="uppercase font-extrabold text-black text-2xl">gainmax</h1>
-            <h2 className="text-black">Group Pte Ltd</h2>
+          <Image src={Logo} alt="logo" className="w-[60px] h-[60px] md:w-[90px] md:h-[90px]" />
+          <div className="md:flex flex-col items-center justify-center text-center hidden">
+            <h1 className="uppercase font-extrabold text-black text-xl">gainmax</h1>
+            <h2 className="text-black text-sm">Group Pte Ltd</h2>
           </div>
         </Link>
 
-        {/* Menu */}
+        {/* Desktop Menu */}
         <AnimatePresence>
           {matches && (
             <motion.div className="flex gap-x-10 justify-between" initial={{ opacity: 0, y: -20 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -20 }} transition={{ duration: 0.3 }}>
@@ -79,12 +91,12 @@ export default function Navbar() {
                       animate={{ opacity: 1, y: 0 }}
                       exit={{ opacity: 0, y: 10 }}
                       transition={{ duration: 0.2 }}
-                      className="absolute left-0 mt-2 w-64 bg-blue-500 opacity-40 shadow-lg py-2 z-[96]"
+                      className="absolute left-0 mt-2 w-64 bg-blue-500 backdrop-blur-lg shadow-lg py-2 z-[96]"
                       onMouseEnter={() => handleMouseEnter(link.name)}
                       onMouseLeave={handleMouseLeave}
                     >
                       {link.menus.map((menu) => (
-                        <Link key={menu.path} href={menu.path} className="block px-4 py-2 text-sm capitalize hover:bg-blue-600 transition-colors font-medium text-white" onClick={handleLinkClick}>
+                        <Link key={menu.path} href={menu.path} className="block px-4 py-2 text-sm uppercase text-center hover:bg-blue-600 transition-colors font-medium text-white" onClick={handleLinkClick}>
                           {menu.name}
                         </Link>
                       ))}
@@ -98,7 +110,7 @@ export default function Navbar() {
 
         {/* Icon Menu */}
         {matches && (
-          <div className=" flex flex-col gap-y-2">
+          <div className="flex flex-col gap-y-2">
             <div className="flex flex-row gap-x-2 text-sm items-center">
               <div className="flex border border-black rounded-full p-2">
                 <Phone size={20} className="text-black" />
@@ -113,6 +125,79 @@ export default function Navbar() {
             </div>
           </div>
         )}
+
+        {/* Toggle Button */}
+        {!matches && (
+          <div className="space-y-1.5 cursor-pointer z-[99]" onClick={() => setToggle((prevToggle) => !prevToggle)}>
+            <motion.span animate={{ rotateZ: toggle ? 45 : 0, y: toggle ? 8 : 0 }} className="block h-0.5 w-8 bg-black" />
+            <motion.span animate={{ width: toggle ? 0 : 32 }} className="block h-0.5 w-8 bg-black" />
+            <motion.span animate={{ rotateZ: toggle ? -45 : 0, y: toggle ? -8 : 0 }} className="block h-0.5 w-8 bg-black" />
+          </div>
+        )}
+
+        {/* Mobile Menu */}
+        <AnimatePresence>
+          {!matches && toggle && (
+            <motion.div
+              initial={{ opacity: 0, x: '100%' }}
+              animate={{ opacity: 1, x: 0 }}
+              exit={{ opacity: 0, x: '100%' }}
+              transition={{ type: 'spring', stiffness: 100, damping: 20 }}
+              className="fixed top-0 left-0 w-full h-screen bg-white z-[98]"
+            >
+              <div className="flex flex-col px-8 pt-24 pb-8 h-full overflow-y-auto">
+                <div className="flex flex-col gap-y-6">
+                  {navLinks.map((link) => (
+                    <div key={link.name} className="flex flex-col">
+                      <div className="flex justify-between items-center cursor-pointer" onClick={() => link.menus && toggleSubmenu(link.name)}>
+                        <Link href={link.menus ? '#' : link.path || '#'} className="text-black font-bold uppercase text-lg" onClick={() => !link.menus && handleLinkClick()}>
+                          {link.name}
+                        </Link>
+                        {link.menus && (
+                          <motion.span animate={{ rotate: activeSubmenu === link.name ? 180 : 0 }} className="text-2xl">
+                            ↓
+                          </motion.span>
+                        )}
+                      </div>
+
+                      {link.menus && (
+                        <AnimatePresence>
+                          {activeSubmenu === link.name && (
+                            <motion.div initial={{ height: 0, opacity: 0 }} animate={{ height: 'auto', opacity: 1 }} exit={{ height: 0, opacity: 0 }} className="overflow-hidden">
+                              <div className="flex flex-col gap-y-3 mt-4 pl-4">
+                                {link.menus.map((menu) => (
+                                  <Link key={menu.path} href={menu.path} className="text-gray-600 uppercase text-base hover:text-blue-600 transition-colors" onClick={handleLinkClick}>
+                                    {menu.name}
+                                  </Link>
+                                ))}
+                              </div>
+                            </motion.div>
+                          )}
+                        </AnimatePresence>
+                      )}
+                    </div>
+                  ))}
+                </div>
+
+                {/* Mobile Contact Info */}
+                <div className="mt-auto pt-8 flex flex-col gap-y-4">
+                  <div className="flex flex-row gap-x-3 items-center">
+                    <div className="flex border border-black rounded-full p-2">
+                      <Phone size={20} className="text-black" />
+                    </div>
+                    <p className="text-black">+65 6747 5070</p>
+                  </div>
+                  <div className="flex flex-row gap-x-3 items-center">
+                    <div className="flex border border-black rounded-full p-2">
+                      <Mail size={20} className="text-black" />
+                    </div>
+                    <p className="text-black">admin@gainmax.net</p>
+                  </div>
+                </div>
+              </div>
+            </motion.div>
+          )}
+        </AnimatePresence>
       </div>
     </nav>
   );
