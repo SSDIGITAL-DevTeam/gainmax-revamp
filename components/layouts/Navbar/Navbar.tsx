@@ -108,18 +108,18 @@ export default function Navbar() {
         {/* Icon Menu */}
         {matches && (
           <div className="flex flex-col gap-y-2">
-            <div className="flex flex-row gap-x-2 text-sm items-center">
+            <Link href="/" className="flex flex-row gap-x-2 text-sm items-center">
               <div className="flex border border-black rounded-full p-2">
                 <Phone size={20} className="text-black" />
               </div>
               <p className="text-black">+65 6747 5070</p>
-            </div>
-            <div className="flex flex-row gap-x-2 text-sm items-center">
+            </Link>
+            <Link href="/" className="flex flex-row gap-x-2 text-sm items-center">
               <div className="flex border border-black rounded-full p-2">
                 <Mail size={20} className="text-black" />
               </div>
               <p className="text-black">admin@gainmax.net</p>
-            </div>
+            </Link>
           </div>
         )}
 
@@ -178,18 +178,18 @@ export default function Navbar() {
 
                 {/* Mobile Contact Info */}
                 <div className="mt-auto pt-8 flex flex-col gap-y-4">
-                  <div className="flex flex-row gap-x-3 items-center">
+                  <Link href="/" className="flex flex-row gap-x-3 items-center">
                     <div className="flex border border-black rounded-full p-2">
                       <Phone size={20} className="text-black" />
                     </div>
                     <p className="text-black">+65 6747 5070</p>
-                  </div>
-                  <div className="flex flex-row gap-x-3 items-center">
+                  </Link>
+                  <Link href="/" className="flex flex-row gap-x-3 items-center cursor-pointer">
                     <div className="flex border border-black rounded-full p-2">
                       <Mail size={20} className="text-black" />
                     </div>
                     <p className="text-black">admin@gainmax.net</p>
-                  </div>
+                  </Link>
                 </div>
               </div>
             </motion.div>
