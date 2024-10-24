@@ -21,7 +21,6 @@ export default function Navbar() {
 
   useEffect(() => {
     setIsClient(true);
-    // Prevent body scroll when mobile menu is open
     if (toggle) {
       document.body.style.overflow = 'hidden';
     } else {
@@ -40,6 +39,16 @@ export default function Navbar() {
       setToggle(false);
     }
     setHoveredLink(null);
+  };
+
+  const handleMobileMenuClick = (link: NavLink, event: React.MouseEvent) => {
+    if (link.menus && (event.target as HTMLElement).classList.contains('dropdown-arrow')) {
+      event.preventDefault();
+      toggleSubmenu(link.name);
+      return;
+    }
+
+    handleLinkClick();
   };
 
   const handleMouseEnter = (name: string) => {
@@ -146,14 +155,22 @@ export default function Navbar() {
                 <div className="flex flex-col gap-y-6">
                   {navLinks.map((link) => (
                     <div key={link.name} className="flex flex-col">
-                      <div className="flex justify-between items-center cursor-pointer" onClick={() => link.menus && toggleSubmenu(link.name)}>
-                        <Link href={link.menus ? '#' : link.path || '#'} className="text-black font-bold uppercase text-lg" onClick={() => !link.menus && handleLinkClick()}>
+                      <div className="flex justify-between items-center">
+                        <Link href={link.path || '#'} className="text-black font-bold uppercase text-lg flex-grow" onClick={() => handleLinkClick()}>
                           {link.name}
                         </Link>
                         {link.menus && (
-                          <motion.span animate={{ rotate: activeSubmenu === link.name ? 180 : 0 }} className="text-2xl">
-                            ↓
-                          </motion.span>
+                          <button
+                            onClick={(e) => {
+                              e.preventDefault();
+                              toggleSubmenu(link.name);
+                            }}
+                            className="dropdown-arrow p-2"
+                          >
+                            <motion.span animate={{ rotate: activeSubmenu === link.name ? 180 : 0 }} className="text-2xl block">
+                              ↓
+                            </motion.span>
+                          </button>
                         )}
                       </div>
 
