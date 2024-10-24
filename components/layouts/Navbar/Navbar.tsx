@@ -194,7 +194,7 @@ export default function Navbar() {
                 </div>
 
                 {/* Mobile Contact Info */}
-                <div className="mt-auto pt-8 flex flex-col gap-y-4">
+                <div className="mt-auto pb-10 flex flex-col gap-y-4">
                   <Link href="/" className="flex flex-row gap-x-3 items-center">
                     <div className="flex border border-black rounded-full p-2">
                       <Phone size={20} className="text-black" />
