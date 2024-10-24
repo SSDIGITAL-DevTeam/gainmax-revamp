@@ -64,7 +64,7 @@ export default function Navbar() {
   }
 
   return (
-    <nav className="bg-transparent backdrop-blur-lg fixed w-full top-0 z-[90] border border-b-gray-300">
+    <nav className="bg-white/70 fixed w-full top-0 z-[90] border border-b-black">
       <div className="w-full max-w-[99rem] py-4 lg:py-8 mx-auto lg:mx-7 2xl:mx-auto px-5 md:px-5 flex justify-between items-center">
         {/* Logo */}
         <Link href="/" className="flex flex-col gap-x-4 items-center justify-center gap-y-3">
@@ -75,12 +75,11 @@ export default function Navbar() {
           </div>
         </Link>
 
-        {/* Desktop Menu */}
         <AnimatePresence>
           {matches && (
-            <motion.div className="flex gap-x-10 justify-between" initial={{ opacity: 0, y: -20 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -20 }} transition={{ duration: 0.3 }}>
+            <motion.div className="flex gap-x-12 justify-between" initial={{ opacity: 0, y: -20 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -20 }} transition={{ duration: 0.3 }}>
               {navLinks.map((link) => (
-                <div key={link.name} className="relative group" onMouseEnter={() => handleMouseEnter(link.name)} onMouseLeave={handleMouseLeave}>
+                <div key={link.name} className="relative flex flex-col items-center" onMouseEnter={() => handleMouseEnter(link.name)} onMouseLeave={handleMouseLeave}>
                   <Link href={link.path || '#'} className="text-black font-bold transition-colors uppercase">
                     {link.name}
                   </Link>
@@ -91,9 +90,7 @@ export default function Navbar() {
                       animate={{ opacity: 1, y: 0 }}
                       exit={{ opacity: 0, y: 10 }}
                       transition={{ duration: 0.2 }}
-                      className="absolute left-0 mt-2 w-64 bg-blue-500 backdrop-blur-lg shadow-lg py-2 z-[96]"
-                      onMouseEnter={() => handleMouseEnter(link.name)}
-                      onMouseLeave={handleMouseLeave}
+                      className="absolute top-full mt-2 w-64 bg-blue-500 backdrop-blur-lg shadow-lg py-2 z-[96]"
                     >
                       {link.menus.map((menu) => (
                         <Link key={menu.path} href={menu.path} className="block px-4 py-2 text-sm uppercase text-center hover:bg-blue-600 transition-colors font-medium text-white" onClick={handleLinkClick}>
