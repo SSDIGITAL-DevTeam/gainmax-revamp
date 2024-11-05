@@ -74,7 +74,7 @@ export default function Navbar() {
 
   return (
     <nav className="bg-white/70 fixed w-full top-0 z-[90] border border-b-black">
-      <div className="w-full max-w-[99rem] py-4 lg:py-8 mx-auto lg:mx-7 2xl:mx-auto px-5 md:px-5 flex justify-between items-center">
+      <div className="w-full max-w-[99rem] py-4 lg:py-5 mx-auto lg:mx-7 2xl:mx-auto px-5 md:px-5 flex justify-between items-center">
         {/* Logo */}
         <Link href="/" className="flex flex-col gap-x-4 items-center justify-center gap-y-3">
           <Image src={Logo} alt="logo" className="w-[60px] h-[60px] md:w-[90px] md:h-[90px]" />
@@ -116,7 +116,7 @@ export default function Navbar() {
 
         {/* Icon Menu */}
         {matches && (
-          <div className="flex flex-col gap-y-2">
+          <div className="flex flex-col gap-y-4">
             <Link href="/" className="flex flex-row gap-x-2 text-sm items-center">
               <div className="flex border border-black rounded-full p-2">
                 <Phone size={20} className="text-black" />
