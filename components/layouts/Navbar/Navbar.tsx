@@ -19,6 +19,15 @@ export default function Navbar() {
   const [isClient, setIsClient] = useState(false);
   const timeoutRef = useRef<NodeJS.Timeout | null>(null);
 
+  // Helper function to check if current path matches link or its submenus
+  const isActiveLink = (link: NavLink) => {
+    if (pathname === link.path) return true;
+    if (link.menus) {
+      return link.menus.some((menu) => pathname === menu.path);
+    }
+    return false;
+  };
+
   useEffect(() => {
     setIsClient(true);
     if (toggle) {
@@ -89,7 +98,7 @@ export default function Navbar() {
             <motion.div className="flex gap-x-12 justify-between" initial={{ opacity: 0, y: -20 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -20 }} transition={{ duration: 0.3 }}>
               {navLinks.map((link) => (
                 <div key={link.name} className="relative flex flex-col items-center" onMouseEnter={() => handleMouseEnter(link.name)} onMouseLeave={handleMouseLeave}>
-                  <Link href={link.path || '#'} className="text-black font-bold transition-colors uppercase">
+                  <Link href={link.path || '#'} className={`text-black font-bold transition-colors uppercase p-2 rounded ${isActiveLink(link) ? 'bg-blue-500 text-white' : 'hover:bg-blue-500 hover:text-white'}`}>
                     {link.name}
                   </Link>
 
@@ -102,7 +111,12 @@ export default function Navbar() {
                       className="absolute top-full mt-2 w-64 bg-blue-500 backdrop-blur-lg shadow-lg py-2 z-[96]"
                     >
                       {link.menus.map((menu) => (
-                        <Link key={menu.path} href={menu.path} className="block px-4 py-2 text-sm uppercase text-center hover:bg-blue-600 transition-colors font-medium text-white" onClick={handleLinkClick}>
+                        <Link
+                          key={menu.path}
+                          href={menu.path}
+                          className={`block px-4 py-2 text-sm uppercase text-center hover:bg-blue-600 transition-colors font-medium ${pathname === menu.path ? 'bg-blue-600 text-white' : 'text-white'}`}
+                          onClick={handleLinkClick}
+                        >
                           {menu.name}
                         </Link>
                       ))}
@@ -156,7 +170,7 @@ export default function Navbar() {
                   {navLinks.map((link) => (
                     <div key={link.name} className="flex flex-col">
                       <div className="flex justify-between items-center">
-                        <Link href={link.path || '#'} className="text-black font-bold uppercase text-lg flex-grow" onClick={() => handleLinkClick()}>
+                        <Link href={link.path || '#'} className={`text-black uppercase text-lg flex-grow ${isActiveLink(link) ? 'font-extrabold' : 'font-bold'}`} onClick={() => handleLinkClick()}>
                           {link.name}
                         </Link>
                         {link.menus && (
@@ -180,7 +194,7 @@ export default function Navbar() {
                             <motion.div initial={{ height: 0, opacity: 0 }} animate={{ height: 'auto', opacity: 1 }} exit={{ height: 0, opacity: 0 }} className="overflow-hidden">
                               <div className="flex flex-col gap-y-3 mt-4 pl-4">
                                 {link.menus.map((menu) => (
-                                  <Link key={menu.path} href={menu.path} className="text-gray-600 uppercase text-base hover:text-blue-600 transition-colors" onClick={handleLinkClick}>
+                                  <Link key={menu.path} href={menu.path} className={`text-gray-600 uppercase text-base hover:font-bold transition-colors ${pathname === menu.path ? 'font-extrabold' : ''}`} onClick={handleLinkClick}>
                                     {menu.name}
                                   </Link>
                                 ))}
@@ -191,22 +205,6 @@ export default function Navbar() {
                       )}
                     </div>
                   ))}
-                </div>
-
-                {/* Mobile Contact Info */}
-                <div className="mt-auto pb-10 flex flex-col gap-y-4">
-                  <Link href="/" className="flex flex-row gap-x-3 items-center">
-                    <div className="flex border border-black rounded-full p-2">
-                      <Phone size={20} className="text-black" />
-                    </div>
-                    <p className="text-black">+65 6747 5070</p>
-                  </Link>
-                  <Link href="/" className="flex flex-row gap-x-3 items-center cursor-pointer">
-                    <div className="flex border border-black rounded-full p-2">
-                      <Mail size={20} className="text-black" />
-                    </div>
-                    <p className="text-black">admin@gainmax.net</p>
-                  </Link>
                 </div>
               </div>
             </motion.div>
