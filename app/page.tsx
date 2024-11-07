@@ -1,5 +1,6 @@
 'use client';
 
+import React from 'react';
 import Logo from '@/assets/logo/svg/logo.svg';
 import LogoWhite from '@/assets/logo/svg/logo-white.svg';
 import AssetsKeyMilestones from '@/assets/group/introduction/assets-key-milestones.webp';
