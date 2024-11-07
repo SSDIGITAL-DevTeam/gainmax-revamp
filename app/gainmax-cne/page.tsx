@@ -70,6 +70,16 @@ export default function page() {
             our <span className="text-blue-600">services</span>
           </h1>
           <ServiceGrid />
+          <div className="border-b-[3px] border-blue-600 w-full"></div>
+        </div>
+      </section>
+
+      {/* Section 5 */}
+      <section className="flex flex-col overflow-x-hidden py-[20px] md:py-[50px]">
+        <div className="container flex flex-col items-center justify-center gap-y-16 w-full">
+          <h1 className="uppercase font-semibold text-gray-500 text-2xl md:text-3xl lg:text-5xl">
+            c&e <span className="text-blue-600">portfolio</span>
+          </h1>
         </div>
       </section>
     </main>
