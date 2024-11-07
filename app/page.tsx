@@ -31,7 +31,7 @@ export default function Home() {
             {/* Desc */}
             <div className="flex flex-col gap-y-9 lg:w-[60%]">
               <p className="text-xl md:text-2xl lg:text-justify">Gainmax was established in 2001 as a family-owned enterprise, primarily focused on subcontracting projects within the telecommunications industry.</p>
-              <Link href="/" className="text-xl text-orange-600 font-semibold">
+              <Link href="/gainmax-group/introduction" className="text-xl text-orange-600 font-semibold">
                 Read More &gt;
               </Link>
             </div>
@@ -140,6 +140,26 @@ export default function Home() {
           <Image src={AssetsKeyMilestones} alt="AssetsKeyMilestones" className="w-full" />
           <div className="border-b-[3px] border-orange-600 w-full"></div>
         </div>
+      </section>
+
+      {/* section 6 */}
+      <section className="flex flex-col overflow-x-hidden py-[20px] md:py-[50px] gap-y-16">
+        <div className="container flex flex-col items-center justify-center w-full bg-[url('/png/home/asset-award-section.webp')] bg-cover bg-center bg-no-repeat min-h-[80vh]">
+          <div className="w-full flex">
+            <div className="w-full md:w-1/2 flex flex-col space-y-20 py-24 md:py-0 lg:p-6">
+              {/* Vision Section */}
+              <div className="space-y-9">
+                <h2 className="text-3xl md:text-5xl font-bold">
+                  <span className="text-white">AWARDS </span>
+                  <br />
+                  <span className="text-orange-500">& CERTIFICATIONS</span>
+                </h2>
+                <p className="text-white text-xl md:text-2xl">Gainmax has achieved the status of BizSAFE STAR, all thanks to our dedicated and experienced team.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="container border-b-[3px] border-orange-600 w-full"></div>
       </section>
     </main>
   );
