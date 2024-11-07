@@ -12,6 +12,7 @@ import Logo from '@/assets/logo/svg/logo.svg';
 
 export default function Navbar() {
   const [toggle, setToggle] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
   const [hoveredLink, setHoveredLink] = useState<string | null>(null);
   const [activeSubmenu, setActiveSubmenu] = useState<string | null>(null);
   const matches = useMediaQuery('(min-width: 1025px)');
@@ -27,6 +28,19 @@ export default function Navbar() {
     }
     return false;
   };
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 0) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   useEffect(() => {
     setIsClient(true);
@@ -82,7 +96,10 @@ export default function Navbar() {
   }
 
   return (
-    <nav className="bg-white/70 fixed w-full top-0 z-[90] border border-b-black">
+    <nav
+      className={`fixed w-full top-0 z-[90] border border-b-black transition-all duration-300
+      ${isScrolled ? 'bg-white' : 'bg-white/70'}`}
+    >
       <div className="w-full max-w-[99rem] py-4 lg:py-5 mx-auto lg:mx-7 2xl:mx-auto px-5 md:px-5 flex justify-between items-center">
         {/* Logo */}
         <Link href="/" className="flex flex-col gap-x-4 items-center justify-center gap-y-3">
