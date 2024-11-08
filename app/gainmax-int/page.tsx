@@ -2,11 +2,9 @@
 
 import Image from 'next/image';
 import Logo from '@/assets/logo/svg/logo.svg';
-import AssetHeroHomeCNE from '@/assets/cne/asset-hero-home-cne.webp';
-import AssetTimelineHomeCNE from '@/assets/cne/asset-timeline-home-cne.png';
+import AssetSection2INT from '@/assets/int/asset-section2-int.webp';
 import React from 'react';
 import Link from 'next/link';
-import ServiceGrid from '@/components/partials/ServicesGrid/ServicesGrid';
 
 export default function page() {
   return (
@@ -46,7 +44,7 @@ export default function page() {
       {/* section 3 */}
       <section className="flex flex-col overflow-x-hidden py-[20px] md:py-[50px]">
         <div className="container flex flex-col items-center justify-center gap-y-16 w-full">
-          <Image src={AssetHeroHomeCNE} alt="asset hero home cne" className="w-full h-auto md:h-[70vh] object-cover" />
+          <Image src={AssetSection2INT} alt="asset hero home cne" className="w-full h-auto md:h-[70vh] object-cover" />
           <div className="flex flex-col gap-y-8">
             <h1 className="flex flex-col gap-y-3 uppercase text-center">
               <span className="font-semibold text-black text-2xl md:text-3xl lg:text-5xl">EMPOWERING TOMORROW WITH</span>
@@ -57,6 +55,21 @@ export default function page() {
               <p className="text-2xl">From Development to Maintenance: Your One-Stop Solar Solution for Industrial, Commercial, and Residential Buildings. Empowering Energy and Cost Savings Efficiently. </p>
             </div>
           </div>
+          <div className="border-b-[3px] border-green-600 w-full"></div>
+        </div>
+      </section>
+
+      {/* section 4 */}
+      <section className="flex flex-col overflow-x-hidden mb-4">
+        <div className="container flex flex-col items-center justify-center gap-y-16 w-full">
+          <div className="flex flex-col gap-y-8">
+            <h1 className="flex flex-col gap-y-3 uppercase text-center">
+              <span className="font-semibold text-black text-2xl md:text-3xl lg:text-5xl">
+                PRODUCTS <span className="text-green-600"> & SERVICES</span>
+              </span>
+            </h1>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-5"></div>
           <div className="border-b-[3px] border-green-600 w-full"></div>
         </div>
       </section>
