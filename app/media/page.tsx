@@ -4,7 +4,7 @@ import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import CesgLogo from '@/assets/media/cesg_logo.png';
-import SMELOGO from '@/assets/media/sme100_logo.png';
+import SMELOGO from '@/assets/media/sme-logo.png';
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/carousel';
 
 // Media SME
