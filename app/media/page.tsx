@@ -8,11 +8,11 @@ import SMELOGO from '@/assets/media/sme100_logo.png';
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/carousel';
 
 // Media SME
-import AssetMediaSME1 from '@/assets/media/sme100/1.jpg';
-import AssetMediaSME2 from '@/assets/media/sme100/2.jpg';
-import AssetMediaSME3 from '@/assets/media/sme100/3.jpg';
-import AssetMediaSME4 from '@/assets/media/sme100/4.jpg';
-import AssetMediaSME5 from '@/assets/media/sme100/5.jpg';
+import AssetMediaSME1 from '@/assets/media/sme100/1.webp';
+import AssetMediaSME2 from '@/assets/media/sme100/2.webp';
+import AssetMediaSME3 from '@/assets/media/sme100/3.webp';
+import AssetMediaSME4 from '@/assets/media/sme100/4.webp';
+import AssetMediaSME5 from '@/assets/media/sme100/5.webp';
 
 // Media CESG
 import AssetMediaCESG1 from '@/assets/media/cesg/1.jpg';
