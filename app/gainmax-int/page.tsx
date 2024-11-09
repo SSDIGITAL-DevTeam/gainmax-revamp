@@ -10,7 +10,7 @@ export default function page() {
   return (
     <main>
       {/* section 1 */}
-      <section className="relative w-full h-screen py-[100px] md:px-6 lg:px-10 flex bg-[url('/png/cne/home/asset-hero-home-cne.webp')] bg-cover bg-center bg-no-repeat min-h-screen justify-center overflow-x-hidden border-b-[8px] md:border-b-[10px] border-green-600"></section>
+      <section className="relative w-full h-screen py-[100px] md:px-6 lg:px-10 flex bg-[url('/png/int/home/asset-hero-home.webp')] bg-cover bg-center bg-no-repeat min-h-screen justify-center overflow-x-hidden border-b-[8px] md:border-b-[10px] border-green-600"></section>
 
       {/* section 2 */}
       <section className="flex flex-col overflow-x-hidden py-[50px] md:py-[50px]">
@@ -69,7 +69,43 @@ export default function page() {
               </span>
             </h1>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-5"></div>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-5 w-full">
+            <Link href="/" className="relative items-center justify-center flex bg-[url('/png/int/home/services/asset-service-1.webp')] bg-cover bg-center bg-no-repeat w-full min-h-[370px] p-10 rounded-lg">
+              {/* Overlay */}
+              <div className="absolute inset-0 bg-black opacity-35 rounded-lg" />
+              <p className="text-white text-xl font-semibold relative z-10">Solar Panels</p>
+            </Link>
+            <Link href="/" className="relative items-center justify-center flex bg-[url('/png/int/home/services/asset-service-4.webp')] bg-cover bg-center bg-no-repeat w-full min-h-[370px] p-10 rounded-lg">
+              {/* Overlay */}
+              <div className="absolute inset-0 bg-black opacity-35 rounded-lg" />
+              <p className="text-white text-xl font-semibold relative z-10">Solar Lights</p>
+            </Link>
+            <Link href="/" className="relative items-center justify-center flex bg-[url('/png/int/home/services/asset-service-3.webp')] bg-cover bg-center bg-no-repeat w-full min-h-[370px] p-10 rounded-lg">
+              {/* Overlay */}
+              <div className="absolute inset-0 bg-black opacity-35 rounded-lg" />
+              <p className="text-white text-xl font-semibold relative z-10">Solar EV Chargers</p>
+            </Link>
+            <Link href="/" className="relative items-center justify-center flex bg-[url('/png/int/home/services/asset-service-2.webp')] bg-cover bg-center bg-no-repeat w-full min-h-[370px] p-10 rounded-lg">
+              {/* Overlay */}
+              <div className="absolute inset-0 bg-black opacity-35 rounded-lg" />
+              <p className="text-white text-xl font-semibold relative z-10">Solar Film</p>
+            </Link>
+            <Link href="/" className="relative items-center justify-center flex bg-[url('/png/int/home/services/asset-service-2.webp')] bg-cover bg-center bg-no-repeat w-full min-h-[370px] p-10 rounded-lg">
+              {/* Overlay */}
+              <div className="absolute inset-0 bg-black opacity-35 rounded-lg" />
+              <p className="text-white text-xl font-semibold relative z-10">Solar Water Heater</p>
+            </Link>
+            <Link href="/" className="relative items-center justify-center flex bg-[url('/png/int/home/services/asset-service-2.webp')] bg-cover bg-center bg-no-repeat w-full min-h-[370px] p-10 rounded-lg">
+              {/* Overlay */}
+              <div className="absolute inset-0 bg-black opacity-35 rounded-lg" />
+              <p className="text-white text-xl font-semibold relative z-10">Hybrid Aircon</p>
+            </Link>
+            <Link href="/" className="relative items-center justify-center flex bg-[url('/png/int/home/services/asset-service-2.webp')] bg-cover bg-center bg-no-repeat w-full min-h-[370px] p-10 rounded-lg">
+              {/* Overlay */}
+              <div className="absolute inset-0 bg-black opacity-35 rounded-lg" />
+              <p className="text-white text-xl font-semibold relative z-10">Energy Storage System Solutions</p>
+            </Link>
+          </div>
           <div className="border-b-[3px] border-green-600 w-full"></div>
         </div>
       </section>
