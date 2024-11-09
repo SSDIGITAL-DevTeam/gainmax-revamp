@@ -4,7 +4,7 @@ import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import CesgLogo from '@/assets/media/cesg_logo.png';
-import SME100Logo from '@/assets/media/sme100_logo.png';
+import SMELOGO from '@/assets/media/sme100_logo.png';
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/carousel';
 
 // Media SME
@@ -80,7 +80,7 @@ export default function page() {
       {/* section 3 */}
       <section className="flex flex-col overflow-x-hidden py-[50px] md:py-[50px]">
         <div className="container flex flex-col items-center justify-center gap-y-16 w-full lg:mt-[60px]">
-          <Image src={SME100Logo} alt="SME logo" className="w-[10rem] md:w-[20rem]" />
+          <Image src={SMELOGO} alt="SME logo" className="w-[10rem] md:w-[20rem]" />
           <h1 className=" font-semibold text-gray-500 text-2xl md:text-3xl lg:text-5xl">
             THE <span className="text-slate-600">SPREMIER AWARDS FOR SMEs</span>
           </h1>
