@@ -9,7 +9,7 @@ const config: Config = {
         body: ['Inter', 'sans-serif'],
       },
       container: {
-        center: true,
+        center: true, 
         padding: '2rem',
         screens: {
           sm: '640px',
