@@ -67,7 +67,16 @@ export default function page() {
       </section>
 
       {/* Section 4 */}
-      
+      <section className="flex flex-col overflow-x-hidden py-[20px] md:py-[50px] gap-y-16">
+        <div className="container relative flex flex-col items-center justify-center w-full bg-[url('/png/cnp/assets-section-4-cnp.webp')] bg-cover bg-center bg-no-repeat min-h-[80vh]">
+          <div className="absolute bottom-7 right-7 p-4">
+            <h1 className="text-3xl md:text-5xl font-semibold flex flex-col text-right text-white uppercase gap-y-3">
+              <span>value</span>
+              <span className="text-orange-300">proposition</span>
+            </h1>
+          </div>
+        </div>
+      </section>
     </main>
   );
 }
