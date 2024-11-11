@@ -2,7 +2,7 @@ import { JSX, ReactNode } from 'react';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Introduction | Gainmax I&T',
+  title: 'Partner & Collaboration | Gainmax I&T',
   description: 'Introduction to Gainmax I&T',
   icons: {
     icon: '/svg/logo.svg',
