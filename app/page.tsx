@@ -4,6 +4,15 @@ import React from 'react';
 import Logo from '@/assets/logo/svg/logo.svg';
 import LogoWhite from '@/assets/logo/svg/logo-white.svg';
 import AssetsKeyMilestones from '@/assets/group/introduction/assets-key-milestones.webp';
+import AssetTimeline from '@/assets/group/asset-timeline.png';
+// Brand
+import AssetBrand1 from '@/assets/group/brand/asset-brand-1.png';
+import AssetBrand2 from '@/assets/group/brand/asset-brand-2.png';
+import AssetBrand3 from '@/assets/group/brand/asset-brand-3.png';
+import AssetBrand4 from '@/assets/group/brand/asset-brand-4.png';
+import AssetBrand5 from '@/assets/group/brand/asset-brand-5.png';
+import AssetBrand6 from '@/assets/group/brand/asset-brand-6.png';
+
 import Image from 'next/image';
 import Link from 'next/link';
 
@@ -68,7 +77,9 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="container border-b-[3px] border-orange-600 w-full"></div>
+        <div className="container w-full px-[2rem] lg:px-0">
+          <div className="border-b-[3px] border-orange-600 w-full"></div>
+        </div>
       </section>
 
       {/* section 4 */}
@@ -139,6 +150,7 @@ export default function Home() {
             key <span className="text-orange-600">group</span>
           </h1>
           <Image src={AssetsKeyMilestones} alt="AssetsKeyMilestones" className="w-full" />
+          <Image src={AssetTimeline} alt="AssetTimeline" className="w-full" />
           <div className="border-b-[3px] border-orange-600 w-full"></div>
         </div>
       </section>
@@ -160,7 +172,17 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="container border-b-[3px] border-orange-600 w-full"></div>
+        <div className="container w-full px-[2rem] lg:px-0">
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-7 items-center">
+            <Image src={AssetBrand1} alt="AssetBrand1" className="w-[80%]" />
+            <Image src={AssetBrand2} alt="AssetBrand2" className="w-[80%]" />
+            <Image src={AssetBrand3} alt="AssetBrand3" className="w-[80%]" />
+            <Image src={AssetBrand4} alt="AssetBrand4" className="w-[80%]" />
+            <Image src={AssetBrand5} alt="AssetBrand5" className="w-[80%]" />
+            <Image src={AssetBrand6} alt="AssetBrand6" className="w-[80%]" />
+          </div>
+          <div className="border-b-[3px] border-orange-600 w-full"></div>
+        </div>
       </section>
     </main>
   );
