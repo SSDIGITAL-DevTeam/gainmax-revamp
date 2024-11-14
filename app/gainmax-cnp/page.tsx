@@ -3,6 +3,9 @@
 import Image from 'next/image';
 import Logo from '@/assets/logo/svg/logo.svg';
 import AssetSection3Cnp from '@/assets/cnp/asset-home-section-3.webp';
+import { IoSpeedometerOutline, IoEarth } from 'react-icons/io5';
+import { PiWindmill, PiHandshake } from 'react-icons/pi';
+import { FaMedapps } from 'react-icons/fa';
 import React from 'react';
 import Link from 'next/link';
 
@@ -74,6 +77,40 @@ export default function page() {
               <span>value</span>
               <span className="text-orange-300">proposition</span>
             </h1>
+          </div>
+        </div>
+      </section>
+      <section className="flex flex-col overflow-x-hidden py-[20px] md:py-[50px] gap-y-16">
+        <div className="container grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 lg:gap-14">
+          <div className="flex flex-col gap-y-4">
+            <div className="flex items-center justify-center bg-[#859F3D] w-full min-h-[10rem] p-5 rounded-tl-[5rem] rounded-br-[5rem]">
+              <IoSpeedometerOutline className="text-white" size={90} />
+            </div>
+            <h1 className="text-lg font-semibold text-black text-center">REMOTE PV PERFORMANCE MONITORING SERVICE</h1>
+          </div>
+          <div className="flex flex-col gap-y-4">
+            <div className="flex items-center justify-center bg-[#859F3D] w-full min-h-[10rem] p-5 rounded-tl-[5rem] rounded-br-[5rem]">
+              <FaMedapps className="text-white" size={90} />
+            </div>
+            <h1 className="text-lg font-semibold text-black text-center">SOLAR PREVENTIVE MAINTENANCE</h1>
+          </div>
+          <div className="flex flex-col gap-y-4">
+            <div className="flex items-center justify-center bg-[#859F3D] w-full min-h-[10rem] p-5 rounded-tl-[5rem] rounded-br-[5rem]">
+              <PiHandshake className="text-white" size={90} />
+            </div>
+            <h1 className="text-lg font-semibold text-black text-center">WASTE MANAGEMENT</h1>
+          </div>
+          <div className="flex flex-col gap-y-4">
+            <div className="flex items-center justify-center bg-[#859F3D] w-full min-h-[10rem] p-5 rounded-tl-[5rem] rounded-br-[5rem]">
+              <PiWindmill className="text-white" size={90} />
+            </div>
+            <h1 className="text-lg font-semibold text-black text-center">RENEWABLE ENERGY CERTIFICATES FACILITATION</h1>
+          </div>
+          <div className="flex flex-col gap-y-4">
+            <div className="flex items-center justify-center bg-[#859F3D] w-full min-h-[10rem] p-5 rounded-tl-[5rem] rounded-br-[5rem]">
+              <IoEarth className="text-white" size={90} />
+            </div>
+            <h1 className="text-lg font-semibold text-black text-center">CARBON TRACKING AND SUSTAINABILITY REPORTING</h1>
           </div>
         </div>
       </section>
