@@ -8,6 +8,7 @@
   :root {
     @apply font-body;
     --radius: 0.5rem;
+    scroll-behavior: smooth;
   }
 }
 

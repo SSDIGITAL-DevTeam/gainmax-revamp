@@ -18,23 +18,23 @@ export const navLinks: NavLink[] = [
       },
       {
         name: 'vision & mission',
-        path: '/gainmax-group/vision-mission',
+        path: '#vision',
       },
       {
         name: 'group of companies',
-        path: '/gainmax-group/group-of-companies',
+        path: '#group',
       },
       {
         name: 'key milestones',
-        path: '/gainmax-group/key-milestones',
+        path: '#milestones',
       },
       {
         name: 'award & certifications',
-        path: '/gainmax-group/award-certifications',
+        path: '#awards',
       },
       {
         name: 'careers',
-        path: '/gainmax-group/careers',
+        path: '#careers',
       },
     ],
   },

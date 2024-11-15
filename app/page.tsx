@@ -51,7 +51,7 @@ export default function Home() {
       </section>
 
       {/* section 3 */}
-      <section className="flex flex-col overflow-x-hidden py-[20px] md:py-[50px] gap-y-16">
+      <section id="vision" className="flex flex-col overflow-x-hidden py-[20px] md:py-[50px] gap-y-16">
         <div className="container flex flex-col items-center justify-center w-full bg-[url('/png/home/asset-section-3.webp')] bg-cover bg-center bg-no-repeat min-h-[80vh]">
           <div className="w-full flex justify-end">
             <div className="w-full md:w-1/2 flex flex-col space-y-20 py-24 md:py-0 lg:p-6">
@@ -83,7 +83,7 @@ export default function Home() {
       </section>
 
       {/* section 4 */}
-      <section className="flex flex-col overflow-x-hidden py-[20px] md:py-[50px]">
+      <section id="group" className="flex flex-col overflow-x-hidden py-[20px] md:py-[50px]">
         <div className="container flex flex-col items-center justify-center gap-y-16 w-full">
           <h1 className="uppercase font-semibold text-gray-500 text-2xl md:text-3xl lg:text-5xl">
             group <span className="text-orange-600">of companies</span>
@@ -144,7 +144,7 @@ export default function Home() {
       </section>
 
       {/* section 5 */}
-      <section className="flex flex-col overflow-x-hidden py-[20px] md:py-[50px]">
+      <section id="milestones" className="flex flex-col overflow-x-hidden py-[20px] md:py-[50px]">
         <div className="container flex flex-col items-center justify-center gap-y-16 w-full">
           <h1 className="uppercase font-semibold text-gray-500 text-5xl">
             key <span className="text-orange-600">group</span>
@@ -156,11 +156,10 @@ export default function Home() {
       </section>
 
       {/* section 6 */}
-      <section className="flex flex-col overflow-x-hidden py-[20px] md:py-[50px] gap-y-16">
+      <section id="awards" className="flex flex-col overflow-x-hidden py-[20px] md:py-[50px] gap-y-16">
         <div className="container flex flex-col items-center justify-center w-full bg-[url('/png/home/asset-award-section.webp')] bg-cover bg-center bg-no-repeat min-h-[80vh]">
           <div className="w-full flex">
             <div className="w-full md:w-1/2 flex flex-col space-y-20 py-24 md:py-0 lg:p-6">
-              {/* Vision Section */}
               <div className="space-y-9">
                 <h2 className="text-3xl md:text-5xl font-bold">
                   <span className="text-white">AWARDS </span>
@@ -182,6 +181,24 @@ export default function Home() {
             <Image src={AssetBrand6} alt="AssetBrand6" className="w-[80%]" />
           </div>
           <div className="border-b-[3px] border-orange-600 w-full"></div>
+        </div>
+      </section>
+
+      {/* section 7 */}
+      <section id="careers" className="flex flex-col overflow-x-hidden py-[20px] md:py-[50px] gap-y-16">
+        <div className="container flex flex-col items-center justify-center w-full bg-[url('/png/home/assets-section-careers.webp')] bg-cover bg-center bg-no-repeat min-h-[80vh]">
+          <div className="flex w-full">
+            <div className="w-full md:w-1/2 flex flex-col space-y-14 py-24 md:py-0 lg:p-6">
+              <h2 className="text-3xl md:text-5xl font-bold text-orange-500 uppercase">careers</h2>
+              <div className="flex flex-col gap-y-4">
+                <p className="text-xl md:text-2xl">At Gainmax Group, we empower and encourage our people to unlock their potential in creating. We welcome innovative and like-minded thinkers to join this dynamic team.</p>
+                <p className="text-xl md:text-2xl">Together, let's make a possible impact on people and our planet.</p>
+              </div>
+              <Link href="/" className="bg-orange-500 hover:bg-orange-500/90 self-start py-3 px-8 rounded-full text-white text-xl">
+                Upload Resume
+              </Link>
+            </div>
+          </div>
         </div>
       </section>
     </main>

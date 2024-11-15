@@ -82,7 +82,7 @@ export default function page() {
         <div className="container flex flex-col items-center justify-center gap-y-16 w-full lg:mt-[60px]">
           <Image src={SMELOGO} alt="SME logo" className="w-[10rem] md:w-[20rem]" />
           <h1 className=" font-semibold text-gray-500 text-2xl md:text-3xl lg:text-5xl">
-            THE <span className="text-slate-600">SPREMIER AWARDS FOR SMEs</span>
+            THE <span className="text-slate-600">PREMIER AWARDS FOR SMEs</span>
           </h1>
           <div className="flex flex-col gap-y-3 text-lg text-justify">
             <p>
