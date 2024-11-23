@@ -2,9 +2,11 @@
 
 import React from 'react';
 import Image from 'next/image';
-import AssetServices1 from '@/assets/cne/asset-service-1.png';
-import AssetServices2 from '@/assets/cne/asset-service-2.png';
-import AssetServices3 from '@/assets/cne/asset-service-3.png';
+import AssetClementi from '@/assets/cne/asset-clementi-1.webp';
+import AssetMrt from '@/assets/cne/asset-downtown-1.webp';
+import AssetSportsHub from '@/assets/cne/asset-sport-1.webp';
+import AssetOutdoorLamp from '@/assets/cne/asset-outdoor-1.webp';
+import AssetTelecomInfra from '@/assets/cne/asset-tele-1.png';
 
 const servicesData = {
   clementi: {
@@ -14,7 +16,7 @@ const servicesData = {
       'In July 2021, Gainmax was tasked by ST Engineering Pte Ltd to complete the signal availability at the Clementi Bus Interchange.',
       'Heavy bus and pedestrian traffic added to the difficulty of maintaining public safety while avoiding disruptions to operations. Despite the issues, Gainmax delivered on time.',
     ],
-    image: AssetServices1.src,
+    image: AssetClementi.src,
   },
   mrt: {
     id: 'mrt',
@@ -22,7 +24,7 @@ const servicesData = {
     paragraphs: [
       'Prior to 2015, signal distortion was common, if anyone used the phone while travelling underground on the Downtown Line. Gainmax provided mobile coverage network and today, commuters enjoy the seamless communication while travelling underground on the Downtown Line.',
     ],
-    image: AssetServices2.src,
+    image: AssetMrt.src,
   },
   sportsHub: {
     id: 'sportsHub',
@@ -31,7 +33,7 @@ const servicesData = {
       'In July 2 In 2014, all eyes were on the Singapore Sports Hub, which was designed to be a state-of-the-art, fully integrated sports, entertainment, and lifestyle hub.',
       'Gainmax was tasked with the infrastructure set-up and commissioning of telecommunication components for this signature project which involved 4 Telcos – Singtel, M1, Starhub and Grid.',
     ],
-    image: AssetServices2.src,
+    image: AssetSportsHub.src,
   },
   outdoorLamp: {
     id: 'outdoorLamp',
@@ -40,7 +42,7 @@ const servicesData = {
       'We were engaged to construct outdoor lamp pole mobile coverage at Woodleigh flyover.',
       'We delivered on our goals, due to our strict internal protocol designed to resolve our customer’s issues in a precise and speedy manner.',
     ],
-    image: AssetServices3.src,
+    image: AssetOutdoorLamp.src,
   },
   telecomInfra: {
     id: 'telecomInfra',
@@ -51,7 +53,7 @@ const servicesData = {
       'The infrastructure is the components that aid in the transmission of information which include network nodes, network services, telecom services, and satellite systems.',
       'A strong telecommunications infrastructure directly contributes to enhanced efficiency and productivity in various segments enabling businesses to streamline their operations, coordinate supply chains, and improve customer service, resulting in greater overall efficiency.',
     ],
-    image: AssetServices3.src,
+    image: AssetTelecomInfra.src,
   },
 };
 
