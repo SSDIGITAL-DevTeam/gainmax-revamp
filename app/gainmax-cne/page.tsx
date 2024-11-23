@@ -7,6 +7,7 @@ import AssetTimelineHomeCNE from '@/assets/cne/asset-timeline-home-cne.png';
 import React from 'react';
 import Link from 'next/link';
 import ServiceGrid from '@/components/partials/ServicesGrid/ServicesGrid';
+import PortfolioCne from '@/components/partials/PortfolioCne/PortfolioCne';
 
 export default function page() {
   return (
@@ -84,6 +85,7 @@ export default function page() {
           <h1 className="uppercase font-semibold text-gray-500 text-2xl md:text-3xl lg:text-5xl">
             c&e <span className="text-blue-600">portfolio</span>
           </h1>
+          <PortfolioCne />
         </div>
       </section>
     </main>
