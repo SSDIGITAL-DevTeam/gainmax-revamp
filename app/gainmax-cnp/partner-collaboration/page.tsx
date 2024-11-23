@@ -3,6 +3,7 @@ import Logo from '@/assets/logo/svg/logo.svg';
 import Image from 'next/image';
 import LogoWhite from '@/assets/logo/svg/logo-white.svg';
 import AssetPartnership from '@/assets/cnp/assets-partnership-cnp.webp';
+import AssetPartnerLogo from '@/assets/cnp/asset-partner-logo.webp';
 
 export default function page() {
   return (
@@ -29,8 +30,7 @@ export default function page() {
               </p>
             </div>
             <div className="flex flex-col lg:flex-row justify-between items-center w-full gap-10">
-              <div className="grid grid-cols-3 items-center justify-center gap-3 lg:w-[50%]">{/* Logo here */}</div>
-
+              <Image src={AssetPartnerLogo} alt="logo" className="lg:w-[50%]" />
               <ul className="text-xl text-justify flex flex-col lg:w-[50%] gap-y-2">
                 <li>Carbon Footprint Report</li>
                 <li>To develop an impactful ESG strategy</li>

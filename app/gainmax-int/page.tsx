@@ -70,37 +70,37 @@ export default function page() {
             </h1>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-5 w-full">
-            <Link href="/" className="relative items-center justify-center flex bg-[url('/png/int/home/services/asset-service-1.webp')] bg-cover bg-center bg-no-repeat w-full min-h-[370px] p-10 rounded-lg">
+            <Link href="/gainmax-int/products-services" className="relative items-center justify-center flex bg-[url('/png/int/home/services/asset-service-1.webp')] bg-cover bg-center bg-no-repeat w-full min-h-[370px] p-10 rounded-lg">
               {/* Overlay */}
               <div className="absolute inset-0 bg-black opacity-35 rounded-lg" />
               <p className="text-white text-xl font-semibold relative z-10">Solar Panels</p>
             </Link>
-            <Link href="/" className="relative items-center justify-center flex bg-[url('/png/int/home/services/asset-service-4.webp')] bg-cover bg-center bg-no-repeat w-full min-h-[370px] p-10 rounded-lg">
+            <Link href="/gainmax-int/products-services" className="relative items-center justify-center flex bg-[url('/png/int/home/services/asset-service-2.webp')] bg-cover bg-center bg-no-repeat w-full min-h-[370px] p-10 rounded-lg">
               {/* Overlay */}
               <div className="absolute inset-0 bg-black opacity-35 rounded-lg" />
               <p className="text-white text-xl font-semibold relative z-10">Solar Lights</p>
             </Link>
-            <Link href="/" className="relative items-center justify-center flex bg-[url('/png/int/home/services/asset-service-3.webp')] bg-cover bg-center bg-no-repeat w-full min-h-[370px] p-10 rounded-lg">
+            <Link href="/gainmax-int/products-services" className="relative items-center justify-center flex bg-[url('/png/int/home/services/asset-service-3.webp')] bg-cover bg-center bg-no-repeat w-full min-h-[370px] p-10 rounded-lg">
               {/* Overlay */}
               <div className="absolute inset-0 bg-black opacity-35 rounded-lg" />
               <p className="text-white text-xl font-semibold relative z-10">Solar EV Chargers</p>
             </Link>
-            <Link href="/" className="relative items-center justify-center flex bg-[url('/png/int/home/services/asset-service-2.webp')] bg-cover bg-center bg-no-repeat w-full min-h-[370px] p-10 rounded-lg">
+            <Link href="/gainmax-int/products-services" className="relative items-center justify-center flex bg-[url('/png/int/home/services/asset-service-4.webp')] bg-cover bg-center bg-no-repeat w-full min-h-[370px] p-10 rounded-lg">
               {/* Overlay */}
               <div className="absolute inset-0 bg-black opacity-35 rounded-lg" />
               <p className="text-white text-xl font-semibold relative z-10">Solar Film</p>
             </Link>
-            <Link href="/" className="relative items-center justify-center flex bg-[url('/png/int/home/services/asset-service-2.webp')] bg-cover bg-center bg-no-repeat w-full min-h-[370px] p-10 rounded-lg">
+            <Link href="/gainmax-int/products-services" className="relative items-center justify-center flex bg-[url('/png/int/home/services/asset-service-5.webp')] bg-cover bg-center bg-no-repeat w-full min-h-[370px] p-10 rounded-lg">
               {/* Overlay */}
               <div className="absolute inset-0 bg-black opacity-35 rounded-lg" />
               <p className="text-white text-xl font-semibold relative z-10">Solar Water Heater</p>
             </Link>
-            <Link href="/" className="relative items-center justify-center flex bg-[url('/png/int/home/services/asset-service-2.webp')] bg-cover bg-center bg-no-repeat w-full min-h-[370px] p-10 rounded-lg">
+            <Link href="/gainmax-int/products-services" className="relative items-center justify-center flex bg-[url('/png/int/home/services/asset-service-6.webp')] bg-cover bg-center bg-no-repeat w-full min-h-[370px] p-10 rounded-lg">
               {/* Overlay */}
               <div className="absolute inset-0 bg-black opacity-35 rounded-lg" />
               <p className="text-white text-xl font-semibold relative z-10">Hybrid Aircon</p>
             </Link>
-            <Link href="/" className="relative items-center justify-center flex bg-[url('/png/int/home/services/asset-service-2.webp')] bg-cover bg-center bg-no-repeat w-full min-h-[370px] p-10 rounded-lg">
+            <Link href="/gainmax-int/products-services" className="relative items-center justify-center flex bg-[url('/png/int/home/services/asset-service-7.webp')] bg-cover bg-center bg-no-repeat w-full min-h-[370px] p-10 rounded-lg">
               {/* Overlay */}
               <div className="absolute inset-0 bg-black opacity-35 rounded-lg" />
               <p className="text-white text-xl font-semibold relative z-10">Energy Storage System Solutions</p>

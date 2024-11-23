@@ -60,7 +60,7 @@ export default function page() {
                 We offer a broad range of services to assist companies with their green efforts, including conducting company assessments on energy, water, carbon, waste, hazardous materials, environmental impacts, and more. As your
                 partner, we can devise an overall strategy for sustainability plans..
               </p>
-              <Link href="/gainmax-cnp/" className="text-xl text-orange-300 font-semibold">
+              <Link href="/gainmax-cnp/partner-collaboration" className="text-xl text-orange-300 font-semibold">
                 Read More &gt;
               </Link>
             </div>
@@ -82,36 +82,36 @@ export default function page() {
       </section>
       <section className="flex flex-col overflow-x-hidden py-[20px] md:py-[50px] gap-y-16">
         <div className="container grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 lg:gap-14">
-          <div className="flex flex-col gap-y-4">
+          <Link href="/gainmax-cnp/value-proposition" className="flex flex-col gap-y-4">
             <div className="flex items-center justify-center bg-[#859F3D] w-full min-h-[10rem] p-5 rounded-tl-[5rem] rounded-br-[5rem]">
               <IoSpeedometerOutline className="text-white" size={90} />
             </div>
             <h1 className="text-lg font-semibold text-black text-center">REMOTE PV PERFORMANCE MONITORING SERVICE</h1>
-          </div>
-          <div className="flex flex-col gap-y-4">
+          </Link>
+          <Link href="/gainmax-cnp/value-proposition" className="flex flex-col gap-y-4">
             <div className="flex items-center justify-center bg-[#859F3D] w-full min-h-[10rem] p-5 rounded-tl-[5rem] rounded-br-[5rem]">
               <FaMedapps className="text-white" size={90} />
             </div>
             <h1 className="text-lg font-semibold text-black text-center">SOLAR PREVENTIVE MAINTENANCE</h1>
-          </div>
-          <div className="flex flex-col gap-y-4">
+          </Link>
+          <Link href="/gainmax-cnp/value-proposition" className="flex flex-col gap-y-4">
             <div className="flex items-center justify-center bg-[#859F3D] w-full min-h-[10rem] p-5 rounded-tl-[5rem] rounded-br-[5rem]">
               <PiHandshake className="text-white" size={90} />
             </div>
             <h1 className="text-lg font-semibold text-black text-center">WASTE MANAGEMENT</h1>
-          </div>
-          <div className="flex flex-col gap-y-4">
+          </Link>
+          <Link href="/gainmax-cnp/value-proposition" className="flex flex-col gap-y-4">
             <div className="flex items-center justify-center bg-[#859F3D] w-full min-h-[10rem] p-5 rounded-tl-[5rem] rounded-br-[5rem]">
               <PiWindmill className="text-white" size={90} />
             </div>
             <h1 className="text-lg font-semibold text-black text-center">RENEWABLE ENERGY CERTIFICATES FACILITATION</h1>
-          </div>
-          <div className="flex flex-col gap-y-4">
+          </Link>
+          <Link href="/gainmax-cnp/value-proposition" className="flex flex-col gap-y-4">
             <div className="flex items-center justify-center bg-[#859F3D] w-full min-h-[10rem] p-5 rounded-tl-[5rem] rounded-br-[5rem]">
               <IoEarth className="text-white" size={90} />
             </div>
             <h1 className="text-lg font-semibold text-black text-center">CARBON TRACKING AND SUSTAINABILITY REPORTING</h1>
-          </div>
+          </Link>
         </div>
       </section>
     </main>

@@ -16,7 +16,7 @@ export default function page() {
           <div className="flex flex-col gap-y-8 lg:gap-y-12 items-center w-full">
             {/* Item */}
             <div className="flex flex-col md:flex-row lg:gap-x-32 items-center justify-center w-full">
-              <div className="flex items-center justify-center bg-[#859F3D] p-10 rounded-tl-[5rem] rounded-br-[5rem]">
+              <div className="flex items-center justify-center bg-[#859F3D] p-8 lg:p-10 rounded-tl-[5rem] rounded-br-[5rem]">
                 <IoSpeedometerOutline className="text-white" size={90} />
               </div>
               <div className="flex flex-col gap-y-2">
@@ -26,7 +26,7 @@ export default function page() {
             </div>
 
             <div className="flex flex-col md:flex-row lg:gap-x-32 items-center justify-center w-full">
-              <div className="flex items-center justify-center bg-[#859F3D] p-10 rounded-tl-[5rem] rounded-br-[5rem]">
+              <div className="flex items-center justify-center bg-[#859F3D] p-8 lg:p-10 rounded-tl-[5rem] rounded-br-[5rem]">
                 <FaMedapps className="text-white" size={90} />
               </div>
               <div className="flex flex-col gap-y-2">
@@ -38,7 +38,7 @@ export default function page() {
             </div>
 
             <div className="flex flex-col md:flex-row lg:gap-x-32 items-center justify-center w-full">
-              <div className="flex items-center justify-center bg-[#859F3D] p-10 rounded-tl-[5rem] rounded-br-[5rem]">
+              <div className="flex items-center justify-center bg-[#859F3D] p-8 lg:p-10 rounded-tl-[5rem] rounded-br-[5rem]">
                 <PiHandshake className="text-white" size={90} />
               </div>
               <div className="flex flex-col gap-y-2">
@@ -48,7 +48,7 @@ export default function page() {
             </div>
 
             <div className="flex flex-col md:flex-row lg:gap-x-32 items-center justify-center w-full">
-              <div className="flex items-center justify-center bg-[#859F3D] p-10 rounded-tl-[5rem] rounded-br-[5rem]">
+              <div className="flex items-center justify-center bg-[#859F3D] p-8 lg:p-10 rounded-tl-[5rem] rounded-br-[5rem]">
                 <PiWindmill className="text-white" size={90} />
               </div>
               <div className="flex flex-col gap-y-2">
@@ -58,7 +58,7 @@ export default function page() {
             </div>
 
             <div className="flex flex-col md:flex-row lg:gap-x-32 items-center justify-center w-full">
-              <div className="flex items-center justify-center bg-[#859F3D] p-10 rounded-tl-[5rem] rounded-br-[5rem]">
+              <div className="flex items-center justify-center bg-[#859F3D] p-8 lg:p-10 rounded-tl-[5rem] rounded-br-[5rem]">
                 <IoEarth className="text-white" size={90} />
               </div>
               <div className="flex flex-col gap-y-2">

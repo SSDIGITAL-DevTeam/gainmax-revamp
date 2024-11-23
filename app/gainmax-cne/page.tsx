@@ -32,7 +32,11 @@ export default function page() {
 
             {/* Desc */}
             <div className="flex flex-col gap-y-9 lg:w-[60%]">
-              <p className="text-xl md:text-2xl lg:text-justify">Gainmax was established in 2001 as a family-owned enterprise, primarily focused on subcontracting projects within the telecommunications industry.</p>
+              <h1 className="text-xl md:text-2xl lg:text-justify font-bold">Infrastructure Specialist</h1>
+              <p className="text-xl md:text-2xl lg:text-justify">
+                With over 22 years of market experience, we specialize in cutting-edge telecommunication infrastructure projects by providing a holistic suite of solutions, ensuring seamless connectivity for telecommunication operators and
+                their users
+              </p>
               <Link href="/gainmax-cne/introduction" className="text-xl text-blue-600 font-semibold">
                 Read More &gt;
               </Link>

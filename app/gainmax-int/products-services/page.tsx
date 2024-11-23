@@ -21,7 +21,7 @@ const servicesData = {
       'With a 10-year warranty, our solar lighting technology guarantees reliability and longevity, giving you peace of mind. Whether youre in the B2B or B2C sector, our versatile lighting solutions cater to various environments, from construction sites to gardens, farms, homes, and businesses.',
       'Embrace sustainability and reduce your carbon footprint while enjoying bright, eco-friendly illumination. ',
     ],
-    image: '/png/int/home/services/asset-service-4.webp',
+    image: '/png/int/home/services/asset-service-2.webp',
   },
   EVChargers: {
     id: 'EVChargers',
@@ -39,7 +39,7 @@ const servicesData = {
       'Introducing Gainmaxs revolutionary solar films, meticulously crafted to redefine your indoor environment. Designed to effortlessly regulate sunlight entry and minimize glare, our solar films offer a transformative experience for your space',
       'Experience the difference as our solar films alleviate eye strain and enhance your view from inside to outside.',
     ],
-    image: '/png/int/home/services/asset-service-2.webp',
+    image: '/png/int/home/services/asset-service-4.webp',
   },
   solarwaterheather: {
     id: 'solarwaterheather',
@@ -50,7 +50,7 @@ const servicesData = {
       'Revolutionize and reduce grid dependency with 100% Solar Powered hot water supply. The Mirai Hot Water Systems (HWS) uses innovative, cutting-edge technology to meet the rising demands of green technology products. Equipped with state-of-the art UV absorption technology, our solar powered HWS comes with built-in backup switches, which ensures uninterrupted supply of hot water at night and on rainy days.',
       'Enjoy up to 100% utility savings and achieve Returns on Investment (ROI) in 4 years. Our customized HWS are well suited for industrial, commercial, and residential purposes. ',
     ],
-    image: '/png/int/home/services/asset-service-2.webp',
+    image: '/png/int/home/services/asset-service-5.webp',
   },
   hybridaircon: {
     id: 'hybridaircon',
@@ -61,7 +61,7 @@ const servicesData = {
       'EvoAir Tech Aircon, our hybrid air-conditioner, is manufactured in Malaysia and China factories, and are ISO45000 and ISO515151 certified respectively',
       'The first of its kind Patent-pending Technology which does not contribute to the Urban Heat Island effect, resulting in a truly environmentally friendly air conditioner. As a result, turning on the air-conditioner results in cooling both the interior and exterior environments.',
     ],
-    image: '/png/int/home/services/asset-service-2.webp',
+    image: '/png/int/home/services/asset-service-6.webp',
   },
   energystorage: {
     id: 'energystorage',
@@ -71,7 +71,7 @@ const servicesData = {
       'Narada has been providing ESS solutions for more than a decade and is ranked among the top tier ESS providers in the world. Our products include customized DC racks, ESS containers of various types, outdoor ESS cabinets and liquid-cooled ESS solutions for residential, commercial, industrial, and utility industries.',
       'As Project Partner and Distributor of Narada, we provide a comprehensive solution that caters to a variety of needs of the market.',
     ],
-    image: '/png/int/home/services/asset-service-2.webp',
+    image: '/png/int/home/services/asset-service-7.webp',
   },
 };
 
