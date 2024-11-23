@@ -27,7 +27,7 @@ const ContactForm = () => {
 
   return (
     <div className="w-full max-w-4xl mx-auto">
-      <form onSubmit={handleSubmit} className="grid grid-cols-2 gap-4">
+      <form onSubmit={handleSubmit} className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-10 lg:mt-0">
         {/* Kolom Kiri */}
         <div className="space-y-4">
           {/* Dropdown Nature of Enquiry */}
