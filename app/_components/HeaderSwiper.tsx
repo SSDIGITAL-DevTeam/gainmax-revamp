@@ -55,6 +55,8 @@ export const HeaderSwiper = () => {
             <Image src={swipeImg4.src} alt="Swiper 4" width={500} height={300} className="w-full h-full object-cover" />
           </div>
         </div>
+        {/* border bottom orange 3px*/}
+        <div className="absolute bottom-0 left-0 w-full h-2 bg-orange-500"></div>
       </div>
     </div>
   );
