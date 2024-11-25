@@ -14,11 +14,11 @@ export default function page() {
           </h1>
           <div className="flex flex-col lg:flex-row gap-x-0 gap-y-7 lg:gap-x-20 lg:gap-y-0 items-center justify-center lg:items-start lg:justify-start">
             {/* Logo */}
-            <div className="flex flex-col gap-x-4 gap-y-3 items-center justify-center lg:items-start lg:justify-start">
+            <div className="flex flex-col gap-x-4 items-center justify-center gap-y-3">
               <Image src={Logo} alt="logo" className="w-[60px] h-[60px] md:w-[100px] md:h-[100px]" />
               <div className="flex flex-col items-center justify-center text-center">
                 <h1 className="uppercase font-extrabold text-black text-xl">gainmax</h1>
-                <h2 className="text-black text-sm">Group Pte Ltd</h2>
+                <h2 className="text-black text-sm">Construction & Engineering Pte Ltd</h2>
               </div>
             </div>
 
