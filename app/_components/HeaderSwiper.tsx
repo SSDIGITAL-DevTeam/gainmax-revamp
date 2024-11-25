@@ -56,7 +56,7 @@ export const HeaderSwiper = () => {
           </div>
         </div>
         {/* border bottom orange 3px*/}
-        <div className="absolute bottom-0 left-0 w-full h-2 bg-orange-500"></div>
+        <div className="absolute bottom-0 left-0 w-full h-1 md:h-2 bg-orange-500"></div>
       </div>
     </div>
   );
