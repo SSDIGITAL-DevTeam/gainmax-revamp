@@ -24,7 +24,7 @@ export default function page() {
           </div>
         </div>
         <div className="container flex flex-col overflow-x-hidden mt-[50px] md:mt-[100px]">
-          <Image src={AssetEmpoweringTomorrow} alt="hero" className="w-full h-full lg:h-[50vh] object-cover object-center rounded-3xl" />
+          <Image src={AssetEmpoweringTomorrow} alt="hero" className="w-full h-fullccl lg:h-[50vh] object-cover object-center rounded-3xl" />
         </div>
       </header>
     </main>
