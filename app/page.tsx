@@ -15,12 +15,15 @@ import AssetBrand6 from '@/assets/group/brand/asset-brand-6.png';
 
 import Image from 'next/image';
 import Link from 'next/link';
+import { HeaderSwiper } from './_components/HeaderSwiper';
 
 export default function Home() {
   return (
     <main className="">
       {/* section 1 */}
-      <section className="relative w-full h-screen py-[100px] md:px-6 lg:px-10 flex bg-[url('/png/home/assets-home-hero.png')] bg-cover bg-center bg-no-repeat min-h-screen justify-center overflow-x-hidden border-b-[8px] md:border-b-[10px] border-orange-600"></section>
+      <section className="flex flex-col overflow-x-hidden">
+        <HeaderSwiper />
+      </section>
 
       {/* section 2 */}
       <section className="flex flex-col overflow-x-hidden py-[50px] md:py-[50px]">
