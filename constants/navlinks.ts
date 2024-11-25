@@ -29,7 +29,7 @@ export const navLinks: NavLink[] = [
         path: '#milestones',
       },
       {
-        name: 'award & certifications',
+        name: 'awards & certifications',
         path: '#awards',
       },
       {

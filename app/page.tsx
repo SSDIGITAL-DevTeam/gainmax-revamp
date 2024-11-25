@@ -147,7 +147,7 @@ export default function Home() {
       <section id="milestones" className="flex flex-col overflow-x-hidden py-[20px] md:py-[50px]">
         <div className="container flex flex-col items-center justify-center gap-y-16 w-full">
           <h1 className="uppercase font-semibold text-gray-500 text-5xl">
-            key <span className="text-orange-600">group</span>
+            key <span className="text-orange-600">milestones</span>
           </h1>
           <Image src={AssetsKeyMilestones} alt="AssetsKeyMilestones" className="w-full" />
           <Image src={AssetTimeline} alt="AssetTimeline" className="w-full" />
