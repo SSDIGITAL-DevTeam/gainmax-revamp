@@ -1,9 +1,10 @@
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import AssetServices1 from '@/assets/cne/asset-service-1.png';
-import AssetServices2 from '@/assets/cne/asset-service-2.png';
-import AssetServices3 from '@/assets/cne/asset-service-3.png';
+import AssetServices1 from '@/assets/cne/asset-service-1.webp';
+import AssetServices2 from '@/assets/cne/asset-service-2.webp';
+import AssetServices3 from '@/assets/cne/asset-service-3.webp';
+import AssetServices4 from '@/assets/cne/asset-service-4.webp';
 
 const services = [
   {
@@ -15,7 +16,7 @@ const services = [
   {
     id: 2,
     title: 'Transmission System Implementation',
-    image: AssetServices2.src,
+    image: AssetServices3.src,
     href: '/gainmax-cne/our-services',
   },
   {
@@ -27,7 +28,7 @@ const services = [
   {
     id: 4,
     title: 'Testing, Commissioning & Integration',
-    image: AssetServices3.src,
+    image: AssetServices4.src,
     href: '/gainmax-cne/our-services',
   },
 ];

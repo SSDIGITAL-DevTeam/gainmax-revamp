@@ -51,23 +51,23 @@ export default function page() {
             }}
           >
             <CarouselContent>
-              <CarouselItem className=" md:basis-1/3 lg:basis-1/5">
-                <Image src={AssetMediaCESG1} alt="CESG 1" className="rounded-md" />
+              <CarouselItem className="md:basis-1/3 lg:basis-1/5">
+                <Image src={AssetMediaCESG1} alt="CESG 1" className="rounded-md h-48 w-full object-cover" />
               </CarouselItem>
-              <CarouselItem className=" md:basis-1/3 lg:basis-1/5">
-                <Image src={AssetMediaCESG2} alt="CESG 2" className="rounded-md" />
+              <CarouselItem className="md:basis-1/3 lg:basis-1/5">
+                <Image src={AssetMediaCESG2} alt="CESG 2" className="rounded-md h-48 w-full object-cover" />
               </CarouselItem>
-              <CarouselItem className=" md:basis-1/3 lg:basis-1/5">
-                <Image src={AssetMediaCESG3} alt="CESG 3" className="rounded-md" />
+              <CarouselItem className="md:basis-1/3 lg:basis-1/5">
+                <Image src={AssetMediaCESG3} alt="CESG 3" className="rounded-md h-48 w-full object-cover" />
               </CarouselItem>
-              <CarouselItem className=" md:basis-1/3 lg:basis-1/5">
-                <Image src={AssetMediaCESG4} alt="CESG 4" className="rounded-md" />
+              <CarouselItem className="md:basis-1/3 lg:basis-1/5">
+                <Image src={AssetMediaCESG4} alt="CESG 4" className="rounded-md h-48 w-full object-cover" />
               </CarouselItem>
-              <CarouselItem className=" md:basis-1/3 lg:basis-1/5">
-                <Image src={AssetMediaCESG5} alt="CESG 5" className="rounded-md" />
+              <CarouselItem className="md:basis-1/3 lg:basis-1/5">
+                <Image src={AssetMediaCESG5} alt="CESG 5" className="rounded-md h-48 w-full object-cover" />
               </CarouselItem>
-              <CarouselItem className=" md:basis-1/3 lg:basis-1/5">
-                <Image src={AssetMediaCESG6} alt="CESG 6" className="rounded-md" />
+              <CarouselItem className="md:basis-1/3 lg:basis-1/5">
+                <Image src={AssetMediaCESG6} alt="CESG 6" className="rounded-md h-48 w-full object-cover" />
               </CarouselItem>
             </CarouselContent>
             <CarouselPrevious />

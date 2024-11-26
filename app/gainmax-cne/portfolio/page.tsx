@@ -6,7 +6,7 @@ import AssetClementi from '@/assets/cne/asset-clementi-1.webp';
 import AssetMrt from '@/assets/cne/asset-downtown-1.webp';
 import AssetSportsHub from '@/assets/cne/asset-sport-1.webp';
 import AssetOutdoorLamp from '@/assets/cne/asset-outdoor-1.webp';
-import AssetTelecomInfra from '@/assets/cne/asset-tele-1.png';
+import AssetTelecomInfra from '@/assets/cne/asset-tele-1.webp';
 
 const servicesData = {
   clementi: {
@@ -70,7 +70,7 @@ export default function ServicesPage() {
 
   return (
     <main>
-      <header className="relative w-full min-h-[100vh] md:px-6 lg:px-10 flex mt-[120px] md:mt-[110px] lg:mt-[280px]">
+      <header className="relative w-full md:px-6 lg:px-10 flex mt-[120px] md:mt-[110px] lg:mt-[280px]">
         <div className="container flex flex-col w-full">
           {/* Service Content */}
           <div className="flex flex-col md:flex-row w-full gap-16">
@@ -89,7 +89,7 @@ export default function ServicesPage() {
 
             {/* Main Content */}
             <div className="flex-1">
-              <div className="flex flex-col gap-y-8">
+              <div className="flex flex-col gap-y-8 w-full max-w-[700px]">
                 {/* Title */}
                 <h1 className="text-2xl font-semibold text-black">{currentService.title}</h1>
 
@@ -106,7 +106,7 @@ export default function ServicesPage() {
 
                 {/* Image */}
                 {currentService.image && (
-                  <div className="relative w-full max-w-[500px] aspect-video rounded-xl overflow-hidden mt-4">
+                  <div className="relative w-full max-w-[700px] aspect-video rounded-xl overflow-hidden mt-4">
                     <Image src={currentService.image} alt={`${currentService.title} illustration`} fill className="object-cover" />
                   </div>
                 )}

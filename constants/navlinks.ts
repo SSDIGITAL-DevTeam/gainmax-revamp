@@ -18,23 +18,23 @@ export const navLinks: NavLink[] = [
       },
       {
         name: 'vision & mission',
-        path: '#vision',
+        path: '/#vision',
       },
       {
         name: 'group of companies',
-        path: '#group',
+        path: '/#group',
       },
       {
         name: 'key milestones',
-        path: '#milestones',
+        path: '/#milestones',
       },
       {
         name: 'awards & certifications',
-        path: '#awards',
+        path: '/#awards',
       },
       {
         name: 'careers',
-        path: '#careers',
+        path: '/#careers',
       },
     ],
   },

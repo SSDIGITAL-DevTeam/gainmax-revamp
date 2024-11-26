@@ -107,11 +107,11 @@ export default function ServicesPage() {
 
             {/* Main Content */}
             <div className="flex-1">
-              <div className="flex flex-col gap-y-8">
+              <div className="flex flex-col gap-y-8 w-full max-w-[700px] ">
                 {/* Image */}
 
                 {currentService.image && (
-                  <div className="relative w-full max-w-[500px] aspect-video rounded-xl overflow-hidden">
+                  <div className="relative w-full max-w-[700px] aspect-video rounded-xl overflow-hidden">
                     <Image src={currentService.image} alt={`${currentService.title} illustration`} fill className="object-cover" />
                   </div>
                 )}

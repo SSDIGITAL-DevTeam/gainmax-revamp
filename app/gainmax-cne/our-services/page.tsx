@@ -2,9 +2,10 @@
 
 import React from 'react';
 import Image from 'next/image';
-import AssetServices1 from '@/assets/cne/asset-service-1.png';
-import AssetServices2 from '@/assets/cne/asset-service-2.png';
-import AssetServices3 from '@/assets/cne/asset-service-3.png';
+import AssetServices1 from '@/assets/cne/asset-service-1.webp';
+import AssetServices2 from '@/assets/cne/asset-service-2.webp';
+import AssetServices3 from '@/assets/cne/asset-service-3.webp';
+import AssetServices4 from '@/assets/cne/asset-service-4.webp';
 
 const servicesData = {
   telecom: {
@@ -23,7 +24,7 @@ const servicesData = {
     id: 'transmission',
     title: 'Transmission System Implementation',
     features: ['Ancillary Services'],
-    image: AssetServices2.src,
+    image: AssetServices3.src,
   },
   survey: {
     id: 'survey',
@@ -35,7 +36,7 @@ const servicesData = {
     id: 'testing',
     title: 'Testing, Commissioning & Integration',
     features: ['Customized Hardware Fabrication'],
-    image: AssetServices3.src,
+    image: AssetServices4.src,
   },
 };
 
@@ -52,7 +53,7 @@ export default function ServicesPage() {
 
   return (
     <main>
-      <header className="relative w-full min-h-[100vh] md:px-6 lg:px-10 flex mt-[120px] md:mt-[110px] lg:mt-[280px]">
+      <header className="relative w-full md:px-6 lg:px-10 flex mt-[120px] md:mt-[110px] lg:mt-[280px]">
         <div className="container flex flex-col w-full">
           {/* Service Content */}
           <div className="flex flex-col md:flex-row w-full gap-16">
@@ -73,7 +74,7 @@ export default function ServicesPage() {
 
             {/* Main Content */}
             <div className="flex-1">
-              <div className="flex flex-col gap-y-8">
+              <div className="flex flex-col gap-y-8 w-full max-w-[700px]">
                 {/* Title */}
                 <h1 className="text-2xl font-semibold text-black">{currentService.title}</h1>
 
@@ -86,9 +87,8 @@ export default function ServicesPage() {
                     </li>
                   ))}
                 </ul>
-
-                {/* Image */}
-                <div className="relative w-full max-w-[500px] aspect-video rounded-xl overflow-hidden mt-4">
+                <div className="relative w-full max-w-[700px] aspect-video rounded-xl overflow-hidden mt-4">
+                  {/* Image */}
                   <Image src={currentService.image} alt={`${currentService.title} illustration`} fill className="object-cover" />
                 </div>
               </div>

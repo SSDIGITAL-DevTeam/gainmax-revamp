@@ -1,9 +1,8 @@
 import React from 'react';
-import Logo from '@/assets/logo/svg/logo.svg';
 import Image from 'next/image';
-import LogoWhite from '@/assets/logo/svg/logo-white.svg';
 import AssetPartnership from '@/assets/cnp/assets-partnership-cnp.webp';
 import AssetPartnerLogo from '@/assets/cnp/asset-partner-logo.webp';
+import AssetFlow from '@/assets/cnp/flow.png';
 
 export default function page() {
   return (
@@ -14,7 +13,7 @@ export default function page() {
             Partnership <span className="text-orange-300"> & Collaboration</span>
           </h1>
 
-          <div className="flex flex-col items-start justify-start gap-y-8 w-full">
+          <div className="flex flex-col items-start justify-start gap-y-20 w-full">
             <h2 className="text-orange-300 font-semibold text-2xl mb-10">Your Partner in Green Solutions</h2>
             <div className="flex flex-col gap-y-5">
               <p className="text-xl text-justify">
@@ -43,7 +42,8 @@ export default function page() {
                 <li>Human rights saliency assessment</li>
               </ul>
             </div>
-            <section className="container flex flex-col overflow-x-hidden mb-[80px] lg:mb-[100px]">
+            <Image src={AssetFlow} alt="flow" className="w-full" />
+            <section className="container flex flex-col overflow-x-hidden mb-[80px] lg:mb-[100px] w-full">
               <Image src={AssetPartnership} alt="hero" className="w-full lg:h-[80vh] object-cover object-center rounded-3xl" />
             </section>
           </div>
