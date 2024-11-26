@@ -16,6 +16,7 @@ import AssetBrand6 from '@/assets/group/brand/asset-brand-6.png';
 import Image from 'next/image';
 import Link from 'next/link';
 import { HeaderSwiper } from './_components/HeaderSwiper';
+import FormUploadResume from '@/components/partials/FormUploadResume/FormUploadResume';
 
 export default function Home() {
   return (
@@ -197,9 +198,7 @@ export default function Home() {
                 <p className="text-xl md:text-2xl">At Gainmax Group, we empower and encourage our people to unlock their potential in creating. We welcome innovative and like-minded thinkers to join this dynamic team.</p>
                 <p className="text-xl md:text-2xl">Together, let's make a possible impact on people and our planet.</p>
               </div>
-              <Link href="/" className="bg-orange-500 hover:bg-orange-500/90 self-start py-3 px-8 rounded-full text-white text-xl">
-                Upload Resume
-              </Link>
+              <FormUploadResume />
             </div>
           </div>
         </div>
