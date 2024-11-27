@@ -3,7 +3,7 @@ import { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: 'Partner & Collaboration | Gainmax I&T',
-  description: 'Introduction to Gainmax I&T',
+  description: 'Gainmax initially operated as a small family business involved in subcontracting projects.',
   icons: {
     icon: '/svg/logo.svg',
   },

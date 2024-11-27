@@ -5,7 +5,7 @@ import Footer from '@/components/layouts/Footer/Footer';
 
 export const metadata: Metadata = {
   title: 'Gainmax Group',
-  description: 'Gainmax Group',
+  description: 'Gainmax initially operated as a small family business involved in subcontracting projects.',
   icons: {
     icon: '/svg/logo.svg',
   },
