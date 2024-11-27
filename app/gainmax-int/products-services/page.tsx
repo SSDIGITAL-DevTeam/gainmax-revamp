@@ -2,6 +2,13 @@
 
 import React from 'react';
 import Image from 'next/image';
+import AssetLogoSolarPanels from '@/assets/int/logo/asset-logo-solarpanel.png';
+import AssetLogoSolarLight from '@/assets/int/logo/asset-logo-solarlight.png';
+import AssetLogoSolarEVChargers from '@/assets/int/logo/asset-logo-evcharger.png';
+import AssetLogoSolarFilm from '@/assets/int/logo/asset-logo-solarfilm.png';
+import AssetLogoSolarWaterHeater from '@/assets/int/logo/asset-logo-solarwaterheather.png';
+import AssetLogoHybridAircon from '@/assets/int/logo/asset-logo-hybird.png';
+import AssetLogoEnergyStorage from '@/assets/int/logo/asset-logo-energy.png';
 
 const servicesData = {
   solarpanel: {
@@ -12,6 +19,8 @@ const servicesData = {
       'In addition, Gainmax offers a diverse range of flexible solar panels solutions suited for the agricultural industry aiming to maximize electricity savings.',
     ],
     image: '/png/int/home/services/asset-service-1.webp',
+    imageLogo: AssetLogoSolarPanels.src,
+    logoWidth: 'w-full',
   },
   solarlight: {
     id: 'solarlight',
@@ -22,6 +31,8 @@ const servicesData = {
       'Embrace sustainability and reduce your carbon footprint while enjoying bright, eco-friendly illumination. ',
     ],
     image: '/png/int/home/services/asset-service-2.webp',
+    imageLogo: AssetLogoSolarLight.src,
+    logoWidth: 'w-[15rem]',
   },
   EVChargers: {
     id: 'EVChargers',
@@ -31,6 +42,8 @@ const servicesData = {
       'We believe in fostering a close partnership with our clients for mutual benefits by offering a unique profit-sharing model whereby car owners enjoy competitive tariff charges and become part of the electric revolution',
     ],
     image: '/png/int/home/services/asset-service-3.webp',
+    imageLogo: AssetLogoSolarEVChargers.src,
+    logoWidth: 'w-[15rem]',
   },
   solarfilm: {
     id: 'solarfilm',
@@ -40,6 +53,8 @@ const servicesData = {
       'Experience the difference as our solar films alleviate eye strain and enhance your view from inside to outside.',
     ],
     image: '/png/int/home/services/asset-service-4.webp',
+    imageLogo: AssetLogoSolarFilm.src,
+    logoWidth: 'w-full',
   },
   solarwaterheather: {
     id: 'solarwaterheather',
@@ -51,6 +66,8 @@ const servicesData = {
       'Enjoy up to 100% utility savings and achieve Returns on Investment (ROI) in 4 years. Our customized HWS are well suited for industrial, commercial, and residential purposes. ',
     ],
     image: '/png/int/home/services/asset-service-5.webp',
+    imageLogo: AssetLogoSolarWaterHeater.src,
+    logoWidth: 'w-[15rem]',
   },
   hybridaircon: {
     id: 'hybridaircon',
@@ -62,6 +79,8 @@ const servicesData = {
       'The first of its kind Patent-pending Technology which does not contribute to the Urban Heat Island effect, resulting in a truly environmentally friendly air conditioner. As a result, turning on the air-conditioner results in cooling both the interior and exterior environments.',
     ],
     image: '/png/int/home/services/asset-service-6.webp',
+    imageLogo: AssetLogoHybridAircon.src,
+    logoWidth: 'w-[15rem]',
   },
   energystorage: {
     id: 'energystorage',
@@ -72,6 +91,8 @@ const servicesData = {
       'As Project Partner and Distributor of Narada, we provide a comprehensive solution that caters to a variety of needs of the market.',
     ],
     image: '/png/int/home/services/asset-service-7.webp',
+    imageLogo: AssetLogoEnergyStorage.src,
+    logoWidth: 'w-[15rem]',
   },
 };
 
@@ -127,6 +148,13 @@ export default function ServicesPage() {
                         {paragraph}
                       </p>
                     ))}
+                  </div>
+                )}
+
+                {/* Logo */}
+                {currentService.imageLogo && (
+                  <div className="flex items-center gap-4">
+                    <Image src={currentService.imageLogo} alt={`${currentService.title} logo`} width={500} height={500} className={`${currentService.logoWidth} h-auto`} />
                   </div>
                 )}
               </div>
