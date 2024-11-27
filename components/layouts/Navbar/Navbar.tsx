@@ -131,7 +131,7 @@ export default function Navbar() {
                         <Link
                           key={menu.path}
                           href={menu.path}
-                          className={`block px-4 py-2 text-sm uppercase text-center hover:bg-blue-900 transition-colors font-medium ${pathname === menu.path ? 'bg-blue-600 text-white' : 'text-white'}`}
+                          className={`block px-4 py-2 text-sm uppercase text-center hover:bg-blue-900 transition-colors font-medium ${pathname === menu.path ? 'bg-blue-900 text-white' : 'text-white'}`}
                           onClick={handleLinkClick}
                         >
                           {menu.name}
