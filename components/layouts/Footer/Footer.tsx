@@ -17,10 +17,10 @@ export default function Footer() {
             </Link>
           </div>
         </div>
-        <div className="flex flex-col gap-y-3">
+        <Link href="https://maps.app.goo.gl/sRKzhhEgeYyMBJzq5" className="flex flex-col gap-y-3">
           <h1 className="text-white text-center text-xl md:text-2xl font-semibold">Gainmax Group of Companies</h1>
           <h2 className="text-white text-center text-lg md:text-xl font-medium">246 Woodlands Industrial Park E5, Woodlands Bizhub Singapore 757305</h2>
-        </div>
+        </Link>
         <div className="border-b-[2px] border-gray-300 w-full"></div>
         {/* Copyright */}
         <div className="flex flex-row ">

@@ -115,7 +115,7 @@ export default function Navbar() {
             <motion.div className="flex gap-x-12 justify-between" initial={{ opacity: 0, y: -20 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -20 }} transition={{ duration: 0.3 }}>
               {navLinks.map((link) => (
                 <div key={link.name} className="relative flex flex-col items-center" onMouseEnter={() => handleMouseEnter(link.name)} onMouseLeave={handleMouseLeave}>
-                  <Link href={link.path || '#'} className={`text-black font-bold transition-colors uppercase p-2 rounded ${isActiveLink(link) ? 'bg-blue-500 text-white' : 'hover:bg-blue-500 hover:text-white'}`}>
+                  <Link href={link.path || '#'} className={`text-black font-bold transition-colors uppercase p-2 rounded ${isActiveLink(link) ? 'bg-blue-600 text-white' : 'hover:bg-blue-600 hover:text-white'}`}>
                     {link.name}
                   </Link>
 
@@ -125,13 +125,13 @@ export default function Navbar() {
                       animate={{ opacity: 1, y: 0 }}
                       exit={{ opacity: 0, y: 10 }}
                       transition={{ duration: 0.2 }}
-                      className="absolute top-full mt-2 w-64 bg-blue-500 backdrop-blur-lg shadow-lg py-2 z-[96]"
+                      className="absolute top-full mt-2 w-64 bg-blue-600/80 backdrop-blur-lg shadow-lg py-2 z-[96]"
                     >
                       {link.menus.map((menu) => (
                         <Link
                           key={menu.path}
                           href={menu.path}
-                          className={`block px-4 py-2 text-sm uppercase text-center hover:bg-blue-600 transition-colors font-medium ${pathname === menu.path ? 'bg-blue-600 text-white' : 'text-white'}`}
+                          className={`block px-4 py-2 text-sm uppercase text-center hover:bg-blue-900 transition-colors font-medium ${pathname === menu.path ? 'bg-blue-600 text-white' : 'text-white'}`}
                           onClick={handleLinkClick}
                         >
                           {menu.name}
