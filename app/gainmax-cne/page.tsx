@@ -62,7 +62,9 @@ export default function page() {
             </div>
 
             {/* timeline */}
-            <Image src={AssetTimelineHomeCNE} alt="asset hero home cne" className="w-full h-auto object-cover" />
+            <div className="transform transition-transform duration-300 ease-in-out hover:scale-110">
+              <Image src={AssetTimelineHomeCNE} alt="asset hero home cne" className="w-full h-auto object-cover" />
+            </div>
           </div>
           <div className="border-b-[3px] border-blue-600 w-full"></div>
         </div>
