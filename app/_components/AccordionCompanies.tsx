@@ -9,20 +9,20 @@ export default function AccordionCompanies() {
   const companies = [
     {
       id: 'construction',
-      name: 'GAINMAX Construction & Engineering Pte Ltd',
+      name: 'Construction & Engineering Pte Ltd',
       description: 'Expertise in integrating systems for infrastructure projects, encompassing signaling systems, mobile infrastructure networks, AI cameras, and PV system installations.',
       bgColor: 'bg-blue-500',
     },
     {
       id: 'innovation',
-      name: 'GAINMAX Innovation & Technology Pte Ltd',
+      name: 'Innovation & Technology Pte Ltd',
       description:
         'An EPC company specializing in solar and energy storage systems. Also a distributor of clean & green energy products including solar panels, inverters, solar water heater systems, hybrid air conditioners, EV chargers, and providing designed solution of energy storage system integration.',
       bgColor: 'bg-green-600',
     },
     {
       id: 'consultacy',
-      name: 'GAINMAX Consultacy & Partnership Pte Ltd',
+      name: 'Consultacy & Partnership Pte Ltd',
       description: 'Advocate for sustainability while leveraging on government grants to provide ESG (Environmental, Social, and Governance) reporting. Enhance manufacturing processes to boost productivity and efficiency levels.',
       bgColor: 'bg-yellow-500',
     },
