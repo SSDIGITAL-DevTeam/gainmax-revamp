@@ -72,23 +72,14 @@ export default function AccordionCompanies(): JSX.Element {
     });
   };
 
-  const handleAccordionChange = (value: string) => {
-    // If the same item is clicked, close it
-    if (value === openItem) {
-      setOpenItem('');
-    } else {
-      setOpenItem(value);
-    }
-  };
-
   return (
     <div className="w-full max-w-7xl mx-auto">
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
         {companies.map((company) => (
           <div id={`card-${company.id}`} key={company.id} className="relative">
-            <Accordion type="single" value={openItem} onValueChange={handleAccordionChange} className="transition-all duration-500">
+            <Accordion type="single" value={openItem} className="transition-all duration-500">
               <AccordionItem value={company.id} className={`${company.bgColor} border-none transition-all duration-500`}>
-                <AccordionTrigger className="p-6 text-white hover:no-underline [&>svg]:scale-150 [&>svg]:transition-transform [&>svg]:duration-700">
+                <AccordionTrigger className="p-9 text-white hover:no-underline [&>svg]:scale-150 [&>svg]:transition-transform [&>svg]:duration-700">
                   <div className="flex items-center w-full gap-x-4">
                     <div className="relative flex-shrink-0 w-[40px] h-[40px] sm:w-[45px] sm:h-[45px] md:w-[50px] md:h-[50px] lg:w-[60px] lg:h-[60px]">
                       <Image src={LogoWhite} alt="LogoWhite" fill className="object-contain" />
