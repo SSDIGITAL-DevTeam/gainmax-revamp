@@ -100,13 +100,13 @@ export default function Navbar() {
       className={`fixed w-full top-0 z-[90] border border-b-black transition-all duration-300
       ${isScrolled ? 'bg-white' : 'bg-white/70'}`}
     >
-      <div className="w-full max-w-[99rem] py-4 lg:py-5 mx-auto lg:mx-7 2xl:mx-auto px-5 md:px-5 flex justify-between items-center">
+      <div className="w-full max-w-[99rem] py-4 mx-auto lg:mx-7 2xl:mx-auto px-5 md:px-5 flex justify-between items-center">
         {/* Logo */}
         <Link href="/" className="flex flex-col gap-x-4 items-center justify-center gap-y-3">
-          <Image src={Logo} alt="logo" className="w-[60px] h-[60px] md:w-[90px] md:h-[90px]" />
+          <Image src={Logo} alt="logo" className="w-[60px] h-[60px] md:w-[80px] md:h-[80px]" />
           <div className="md:flex flex-col items-center justify-center text-center hidden">
-            <h1 className="uppercase font-extrabold text-black text-xl">gainmax</h1>
-            <h2 className="text-black text-sm">Group Pte Ltd</h2>
+            <h1 className="uppercase font-extrabold text-black text-[18px]">gainmax</h1>
+            <h2 className="text-black text-xs">Group Pte Ltd</h2>
           </div>
         </Link>
 

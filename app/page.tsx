@@ -88,20 +88,20 @@ export default function Home() {
       </section>
 
       {/* section 4 */}
-      <section id="group" className="flex flex-col overflow-x-hidden py-[20px] md:py-[50px]">
+      <section id="group" className="flex flex-col overflow-x-hidden py-[20px] md:py-[50px] lg:py-[80px] lg:min-h-[70vh]">
         <div className="container flex flex-col items-center justify-center gap-y-14 w-full">
-          <h1 className="uppercase font-semibold text-gray-500 text-2xl md:text-3xl lg:text-5xl">
+          <h1 className="uppercase font-semibold text-gray-500 text-2xl md:text-3xl lg:text-5xl" id="triger-concultacy">
             group <span className="text-orange-600">of companies</span>
           </h1>
           {/* Accordion */}
           <AccordionCompanies />
-          <div className="border-b-[3px] border-orange-600 w-full"></div>
         </div>
       </section>
 
       {/* section 5 */}
       <section id="milestones" className="flex flex-col overflow-x-hidden py-[20px] md:py-[50px]">
         <div className="container flex flex-col items-center justify-center gap-y-16 w-full">
+          <div className="border-t-[3px] border-orange-600 w-full"></div>
           <h1 className="uppercase font-semibold text-gray-500 text-5xl">
             key <span className="text-orange-600">milestones</span>
           </h1>
