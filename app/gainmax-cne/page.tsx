@@ -1,13 +1,14 @@
-'use client';
+"use client";
 
-import Image from 'next/image';
-import Logo from '@/assets/logo/svg/logo.svg';
-import AssetHeroHomeCNE from '@/assets/cne/asset-hero-home-cne.webp';
-import AssetTimelineHomeCNE from '@/assets/cne/asset-timeline-home-cne.png';
-import React from 'react';
-import Link from 'next/link';
-import ServiceGrid from '@/components/partials/ServicesGrid/ServicesGrid';
-import PortfolioCne from '@/components/partials/PortfolioCne/PortfolioCne';
+import Image from "next/image";
+import Logo from "@/assets/logo/svg/logo.svg";
+import AssetHeroHomeCNE from "@/assets/cne/asset-hero-home-cne.webp";
+// import AssetTimelineHomeCNE from "@/assets/cne/asset-timeline-home-cne.png";
+import AssetTimelineMotion from "@/assets/cne/asset-timeline-motion.gif";
+import React from "react";
+import Link from "next/link";
+import ServiceGrid from "@/components/partials/ServicesGrid/ServicesGrid";
+import PortfolioCne from "@/components/partials/PortfolioCne/PortfolioCne";
 
 export default function page() {
   return (
@@ -24,21 +25,36 @@ export default function page() {
           <div className="flex flex-col lg:flex-row gap-x-0 gap-y-7 lg:gap-x-20 lg:gap-y-0 justify-center items-center">
             {/* Logo */}
             <div className="flex flex-col gap-x-4 items-center justify-center gap-y-3">
-              <Image src={Logo} alt="logo" className="w-[60px] h-[60px] md:w-[100px] md:h-[100px]" />
+              <Image
+                src={Logo}
+                alt="logo"
+                className="w-[60px] h-[60px] md:w-[100px] md:h-[100px]"
+              />
               <div className="flex flex-col items-center justify-center text-center">
-                <h1 className="uppercase font-extrabold text-black text-xl">gainmax</h1>
-                <h2 className="text-black text-sm">Construction & Engineering Pte Ltd</h2>
+                <h1 className="uppercase font-extrabold text-black text-xl">
+                  gainmax
+                </h1>
+                <h2 className="text-black text-sm">
+                  Construction & Engineering Pte Ltd
+                </h2>
               </div>
             </div>
 
             {/* Desc */}
             <div className="flex flex-col gap-y-9 lg:w-[60%]">
-              <h1 className="text-xl md:text-2xl lg:text-justify font-bold">Infrastructure Specialist</h1>
+              <h1 className="text-xl md:text-2xl lg:text-justify font-bold">
+                Infrastructure Specialist
+              </h1>
               <p className="text-xl md:text-2xl lg:text-justify">
-                With over 22 years of market experience, we specialize in cutting-edge telecommunication infrastructure projects by providing a holistic suite of solutions, ensuring seamless connectivity for telecommunication operators and
-                their users
+                With over 22 years of market experience, we specialize in
+                cutting-edge telecommunication infrastructure projects by
+                providing a holistic suite of solutions, ensuring seamless
+                connectivity for telecommunication operators and their users
               </p>
-              <Link href="/gainmax-cne/introduction" className="text-xl text-blue-600 font-semibold">
+              <Link
+                href="/gainmax-cne/introduction"
+                className="text-xl text-blue-600 font-semibold"
+              >
                 Read More &gt;
               </Link>
             </div>
@@ -50,20 +66,40 @@ export default function page() {
       {/* section 3 */}
       <section className="flex flex-col overflow-x-hidden py-[20px] md:py-[50px]">
         <div className="container flex flex-col items-center justify-center gap-y-16 w-full">
-          <Image src={AssetHeroHomeCNE} alt="asset hero home cne" className="w-full h-auto md:h-[70vh] object-cover" />
+          <Image
+            src={AssetHeroHomeCNE}
+            alt="asset hero home cne"
+            className="w-full h-auto md:h-[70vh] object-cover"
+          />
           <div className="flex flex-col gap-y-8">
             <h1 className="flex flex-col gap-y-3 uppercase text-center">
-              <span className="font-semibold text-black text-2xl md:text-3xl lg:text-5xl">planning & project</span>
-              <span className="font-bold text-blue-600 text-2xl md:text-3xl lg:text-5xl">management</span>
+              <span className="font-semibold text-black text-2xl md:text-3xl lg:text-5xl">
+                planning & project
+              </span>
+              <span className="font-bold text-blue-600 text-2xl md:text-3xl lg:text-5xl">
+                management
+              </span>
             </h1>
             <div className="flex flex-col gap-y-8 w-full">
-              <p className="text-2xl">Project management is the application of processes, methods, skills, knowledge and experience to achieve specific project objectives within agreed parameters with the client. </p>
-              <p className="text-2xl">Project management has to meet the final deliverables that are constrained to a stipulated timeline and fulfilling clients, expectations.. </p>
+              <p className="text-2xl">
+                Project management is the application of processes, methods,
+                skills, knowledge and experience to achieve specific project
+                objectives within agreed parameters with the client.{" "}
+              </p>
+              <p className="text-2xl">
+                Project management has to meet the final deliverables that are
+                constrained to a stipulated timeline and fulfilling clients,
+                expectations..{" "}
+              </p>
             </div>
 
             {/* timeline */}
-            <div className="transform transition-transform duration-300 ease-in-out hover:scale-110">
-              <Image src={AssetTimelineHomeCNE} alt="asset hero home cne" className="w-full h-auto object-cover" />
+            <div className="transform transition-transform duration-300 ease-in-out hover:scale-110 w-full">
+              <Image
+                src={AssetTimelineMotion}
+                alt="asset hero home cne"
+                className="w-full h-auto object-cover"
+              />
             </div>
           </div>
           <div className="border-b-[3px] border-blue-600 w-full"></div>
