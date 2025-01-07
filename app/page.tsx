@@ -6,6 +6,8 @@ import Logo from "@/assets/logo/svg/logo.svg";
 import AssetsKeyMilestones from "@/assets/group/introduction/assets-key-milestones.webp";
 // import AssetTimeline from "@/assets/group/asset-timeline.png";
 import AssetMilestone from "@/assets/group/Gainmax-Milestone.gif";
+import AssetMilestoneMobile from "@/assets/group/Gainmax-Milestone-mobile.gif";
+
 // Brand
 import AssetBrand1 from "@/assets/group/brand/asset-brand-1.png";
 import AssetBrand2 from "@/assets/group/brand/asset-brand-2.png";
@@ -30,7 +32,7 @@ export default function Home() {
 
       {/* section 2 */}
       <section className="flex flex-col overflow-x-hidden py-[50px] md:py-[50px]">
-        <div className="container flex flex-col items-center justify-center gap-y-16 w-full lg:mt-[60px]">
+        <div className="container p-4 md:p-8 flex flex-col items-center justify-center gap-y-16 w-full lg:mt-[60px]">
           <h1 className="uppercase font-semibold text-gray-500 text-2xl md:text-3xl lg:text-5xl">
             about gainmax <span className="text-orange-600">group</span>
           </h1>
@@ -74,7 +76,7 @@ export default function Home() {
         id="vision"
         className="flex flex-col overflow-x-hidden py-[20px] md:py-[50px] gap-y-16"
       >
-        <div className="container flex flex-col items-center justify-center w-full bg-[url('/png/home/asset-section-3.webp')] bg-cover bg-center bg-no-repeat min-h-[80vh]">
+        <div className="container p-4 md:p-8 flex flex-col items-center justify-center w-full bg-[url('/png/home/asset-section-3.webp')] bg-cover bg-center bg-no-repeat min-h-[80vh]">
           <div className="w-full flex justify-end">
             <div className="w-full md:w-1/2 flex flex-col space-y-20 py-24 md:py-0 lg:p-6">
               {/* Vision Section */}
@@ -105,7 +107,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="container w-full px-[2rem] lg:px-0">
+        <div className="container p-4 md:p-8 w-full px-[2rem] lg:px-0">
           <div className="border-b-[3px] border-orange-600 w-full"></div>
         </div>
       </section>
@@ -115,7 +117,7 @@ export default function Home() {
         id="group"
         className="flex flex-col overflow-x-hidden py-[20px] md:py-[50px] lg:py-[80px] lg:min-h-[70vh]"
       >
-        <div className="container flex flex-col items-center justify-center gap-y-14 w-full">
+        <div className="container p-4 md:p-8 flex flex-col items-center justify-center gap-y-14 w-full">
           <h1
             className="uppercase font-semibold text-gray-500 text-2xl md:text-3xl lg:text-5xl"
             id="triger-concultacy"
@@ -132,7 +134,7 @@ export default function Home() {
         id="milestones"
         className="flex flex-col overflow-x-hidden py-[20px] md:py-[50px]"
       >
-        <div className="container flex flex-col items-center justify-center gap-y-16 w-full">
+        <div className="container p-4 md:p-8 flex flex-col items-center justify-center gap-y-16 w-full">
           <div className="border-t-[3px] border-orange-600 w-full"></div>
           <h1 className="uppercase font-semibold text-gray-500 text-5xl">
             key <span className="text-orange-600">milestones</span>
@@ -142,11 +144,16 @@ export default function Home() {
             alt="AssetsKeyMilestones"
             className="w-full"
           />
-          <div className="transform transition-transform duration-300 ease-in-out hover:scale-110 w-full">
+          <div className="transform transition-transform duration-300 ease-in-out lg:hover:scale-110 w-full">
             <Image
               src={AssetMilestone}
               alt="AssetTimeline"
-              className="w-full"
+              className="w-full object-cover hidden lg:block"
+            />
+            <Image
+              src={AssetMilestoneMobile}
+              alt="AssetTimeline"
+              className="w-full object-cover lg:hidden scale-110 md:scale-100"
             />
           </div>
           <div className="border-b-[3px] border-orange-600 w-full"></div>
@@ -158,7 +165,7 @@ export default function Home() {
         id="awards"
         className="flex flex-col overflow-x-hidden py-[20px] md:py-[50px] gap-y-16"
       >
-        <div className="container flex flex-col items-center justify-center w-full bg-[url('/png/home/asset-award-section.webp')] bg-cover bg-center bg-no-repeat min-h-[80vh]">
+        <div className="container p-4 md:p-8 flex flex-col items-center justify-center w-full bg-[url('/png/home/asset-award-section.webp')] bg-cover bg-center bg-no-repeat min-h-[80vh]">
           <div className="w-full flex">
             <div className="w-full md:w-1/2 flex flex-col space-y-20 py-24 md:py-0 lg:p-6">
               <div className="space-y-9">
@@ -175,7 +182,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="container w-full px-[2rem] lg:px-0">
+        <div className="container p-4 md:p-8 w-full px-[2rem] lg:px-0">
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-7 items-center">
             <Image src={AssetBrand1} alt="AssetBrand1" className="w-[80%]" />
             <Image src={AssetBrand2} alt="AssetBrand2" className="w-[80%]" />
@@ -193,7 +200,7 @@ export default function Home() {
         id="careers"
         className="flex flex-col overflow-x-hidden py-[20px] md:py-[50px] gap-y-16"
       >
-        <div className="container flex flex-col items-center justify-center w-full bg-[url('/png/home/assets-section-careers.webp')] bg-cover bg-center bg-no-repeat min-h-[80vh]">
+        <div className="container p-4 md:p-8 flex flex-col items-center justify-center w-full bg-[url('/png/home/assets-section-careers.webp')] bg-cover bg-center bg-no-repeat min-h-[80vh]">
           <div className="flex w-full">
             <div className="w-full md:w-1/2 flex flex-col space-y-14 py-24 md:py-0 lg:p-6">
               <h2 className="text-3xl md:text-5xl font-bold text-orange-500 uppercase">
