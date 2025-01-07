@@ -5,6 +5,7 @@ import Logo from "@/assets/logo/svg/logo.svg";
 import AssetHeroHomeCNE from "@/assets/cne/asset-hero-home-cne.webp";
 // import AssetTimelineHomeCNE from "@/assets/cne/asset-timeline-home-cne.png";
 import AssetTimelineMotion from "@/assets/cne/asset-timeline-motion.gif";
+import AssetTimelineMotionMobile from "@/assets/cne/asset-timeline-motion-mobile.gif";
 import React from "react";
 import Link from "next/link";
 import ServiceGrid from "@/components/partials/ServicesGrid/ServicesGrid";
@@ -18,7 +19,7 @@ export default function page() {
 
       {/* section 2 */}
       <section className="flex flex-col overflow-x-hidden py-[50px] md:py-[50px]">
-        <div className="container flex flex-col items-center justify-center gap-y-16 w-full lg:mt-[60px]">
+        <div className="container p-4 md:p-8 flex flex-col items-center justify-center gap-y-16 w-full lg:mt-[60px]">
           <h1 className="uppercase font-semibold text-gray-500 text-2xl md:text-3xl lg:text-5xl">
             about gainmax <span className="text-blue-600">C&E</span>
           </h1>
@@ -65,7 +66,7 @@ export default function page() {
 
       {/* section 3 */}
       <section className="flex flex-col overflow-x-hidden py-[20px] md:py-[50px]">
-        <div className="container flex flex-col items-center justify-center gap-y-16 w-full">
+        <div className="container p-4 md:p-8 flex flex-col items-center justify-center gap-y-16 w-full">
           <Image
             src={AssetHeroHomeCNE}
             alt="asset hero home cne"
@@ -98,7 +99,13 @@ export default function page() {
               <Image
                 src={AssetTimelineMotion}
                 alt="asset hero home cne"
-                className="w-full h-auto object-cover"
+                className="w-full h-auto object-cover hidden lg:block"
+              />
+
+              <Image
+                src={AssetTimelineMotionMobile}
+                alt="asset hero home cne"
+                className="w-full h-auto object-cover lg:hidden"
               />
             </div>
           </div>
@@ -108,7 +115,7 @@ export default function page() {
 
       {/* Section 4 */}
       <section className="flex flex-col overflow-x-hidden py-[20px] md:py-[50px]">
-        <div className="container flex flex-col items-center justify-center gap-y-16 w-full">
+        <div className="container p-4 md:p-8 flex flex-col items-center justify-center gap-y-16 w-full">
           <h1 className="uppercase font-semibold text-gray-500 text-2xl md:text-3xl lg:text-5xl">
             our <span className="text-blue-600">services</span>
           </h1>
@@ -119,7 +126,7 @@ export default function page() {
 
       {/* Section 5 */}
       <section className="flex flex-col overflow-x-hidden py-[20px] md:py-[50px]">
-        <div className="container flex flex-col items-center justify-center gap-y-16 w-full">
+        <div className="container p-4 md:p-8 flex flex-col items-center justify-center gap-y-16 w-full">
           <h1 className="uppercase font-semibold text-gray-500 text-2xl md:text-3xl lg:text-5xl">
             c&e <span className="text-blue-600">portfolio</span>
           </h1>
