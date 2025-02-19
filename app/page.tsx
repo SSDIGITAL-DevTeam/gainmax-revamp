@@ -129,7 +129,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* section 5 */}
+      {/* section 5  key milestones */}
       <section
         id="milestones"
         className="flex flex-col overflow-x-hidden py-[20px] md:py-[50px]"
