@@ -76,12 +76,12 @@ export default function page() {
               className="w-full h-auto md:h-[70vh] object-cover"
             />
             <div className="flex flex-col gap-y-8 w-full">
-              <p className="text-2xl">
+              <p className="text-base lg:text-2xl">
                 Initially focusing on subcontracting projects, we expanded our
                 services to encompass Engineering, Procurement, and Construction
                 (EPC) projects, serving clients in solar industry.
               </p>
-              <p className="text-2xl">
+              <p className="text-base lg:text-2xl">
                 From Development to Maintenance: Your One-Stop Solar Solution
                 for Industrial, Commercial, and Residential Buildings.
                 Empowering Energy and Cost Savings Efficiently.{" "}

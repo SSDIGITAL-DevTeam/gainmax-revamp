@@ -117,9 +117,8 @@ export default function ServicesPage() {
               {currentService.images.length > 0 && (
                 <>
                     {currentService.images.map((image, index) => (
-                      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                      <div key={index} className="grid grid-cols-1 md:grid-cols-2 gap-4">
                         <div
-                          key={index}
                           className="relative w-full aspect-video rounded-xl overflow-hidden"
                         >
                           <Image
