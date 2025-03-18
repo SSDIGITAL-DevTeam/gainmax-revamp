@@ -39,6 +39,8 @@ export function useResume() {
     const formData = new FormData(e.currentTarget);
     formData.append('phone', `+${phone}`);
 
+    console.log({formData})
+
     try {
       const res = await create(formData);
 

@@ -31,7 +31,7 @@ export default function FormUploadResume(): JSX.Element {
     captchaRef.current?.reset();
     setPhone('');
   }
-
+  
   useEffect(() => {
     getJobPositions();
   }, []);
@@ -58,8 +58,8 @@ export default function FormUploadResume(): JSX.Element {
       </DialogTrigger>
 
       <DialogPortal>
-        <DialogOverlay className="fixed inset-0 bg-black/10 backdrop-blur-sm z-40" />
-        <DialogContent className="fixed left-[50%] top-[50%] translate-x-[-50%] translate-y-[-50%] w-[90%] max-w-4xl max-h-[85vh] md:max-h-[90vh] overflow-y-auto bg-white rounded-lg shadow-lg z-[99] p-6">
+        <DialogContent className="fixed left-[50%] top-[50%] translate-x-[-50%] translate-y-[-50%] w-[90%] max-w-4xl max-h-[85vh] md:max-h-[90vh] overflow-y-auto bg-white rounded-lg shadow-lg z-[100] p-6">
+        {/* <DialogContent className="absolute left-[50%] top-[50%] translate-x-[-50%] translate-y-[-50%] w-[90%] max-w-4xl max-h-[85vh] md:max-h-[90vh] overflow-visible bg-white rounded-lg shadow-lg z-[100] p-6"> */}
           <DialogHeader>
             <DialogTitle className="text-2xl font-bold text-orange-600">UPLOAD RESUME</DialogTitle>
           </DialogHeader>
@@ -137,8 +137,8 @@ export default function FormUploadResume(): JSX.Element {
                 <p className="text-xs text-gray-600">DOC, DOCX, PDF (Max 5MB)</p>
               </div>
 
-              <div className="relative w-max">
-                <ReCAPTCHA ref={captchaRef} sitekey={process.env.NEXT_PUBLIC_SITE_KEY} />
+              <div className="relative w-max z-[99]">
+                <ReCAPTCHA ref={captchaRef} sitekey={process.env.NEXT_PUBLIC_SITE_KEY}/>
                 {objectHasProperty(resumeErrorMessages.errors, 'g-recaptcha-response') && <small className="text-red-500">Please check re-captcha</small>}
                 {isSending && <div className="absolute inset-0 rounded bg-black/10" />}
               </div>
